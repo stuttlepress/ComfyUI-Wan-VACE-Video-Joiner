@@ -1,13 +1,18 @@
+# ComfyUI Wan VACE Video Joiner
+
 [Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) | [External Download](https://files.catbox.moe/erx0k4.json) | [Reddit Discussion](https://www.reddit.com/r/comfyui/comments/1o0l5l7/wan_vace_clip_joiner_native_workflow)
 
 This workflow uses Wan VACE (Wan 2.2 Fun VACE or Wan 2.1 VACE, your choice!) to smooth out awkward motion transitions between video clips. If you have noisy frames at the start or end of your clips, this technique can also get rid of those.
 
 I've used this workflow to join first-last frame videos for some time and I thought others might find it useful.
 
+## What it Does
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
 
+## Usage
 Detailed usage instructions can be found in the workflow. Please read this carefully. **This is not a ready to run workflow. You need to modify it to fit your system.** Directions about what to modify are in the instructions.
 
+## Dependencies
 I've used native nodes and tried to keep the custom node dependencies to a minimum. The following packages are required. All of them are installable through the Manager.
 
 - [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)
@@ -25,8 +30,7 @@ Model loading and inference is isolated in a subgraph, so It should be easy to m
 
 I am happy to answer questions about the workflow. I am less happy to instruct you on the basics of ComfyUI usage.
 
-
-### Configuration and models
+## Configuration and Models
 You'll need some combination of these models to run the workflow. As already mentioned, this workflow will not run properly on your system until you configure it properly. You probably already have a Wan video generation workflow that runs well on your system. You need to configure this workflow similarly to your generation workflow. The *Sampler* subgraph contains KSampler nodes and model loading nodes. Have your way with these until it feels right to you. Enable the sageattention and torch compile nodes if you know your system supports them. Just make sure all the subgraph inputs and outputs are correctly getting and setting data, and crucially, that the diffusion model you load is one of *Wan2.2 Fun VACE* or *Wan2.1 VACE*. GGUFs work fine, but non-VACE models do not.
 
 - Wan 2.2 Fun VACE
@@ -39,7 +43,7 @@ You'll need some combination of these models to run the workflow. As already men
   - [bf16](https://huggingface.co/Kijai/WanVideo_comfy/tree/main/Fun/VACE)
   - [GGUF](https://huggingface.co/Kijai/WanVideo_comfy_GGUF/tree/main/VACE)
 
-### Troubleshooting
+## Troubleshooting
 - **Brightness/color shift** - VACE can sometimes affect the brightness or saturation of the clips it generates. I don't know how to avoid this tendency, I think it's baked into the model, unfortunately. Disabling lightx2v speed loras can help, as can making sure you use the exact same lora(s) and strength in this workflow that you used when generating your clips. Some people have reported success using a color match node before output of the clips in this workflow. I think specific solutions vary by case, though. The most consistent mitigation I have found is to interpolate framerate up to 30 or 60 fps after using this workflow. The interpolation decreases how perceptible the color shift is. The shift is still there, but it's spread out over 60 frames instead over 16, so it doesn't look like a sudden change to our eyes any more.
 
 - **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.

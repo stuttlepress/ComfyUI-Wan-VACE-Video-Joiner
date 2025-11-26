@@ -1,6 +1,6 @@
 # ComfyUI Wan VACE Video Joiner
 
-[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) | [External Download](https://files.catbox.moe/erx0k4.json) | [Reddit Discussion](https://www.reddit.com/r/comfyui/comments/1o0l5l7/wan_vace_clip_joiner_native_workflow)
+[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) | [Reddit Discussion](https://www.reddit.com/r/comfyui/comments/1o0l5l7/wan_vace_clip_joiner_native_workflow)
 
 This workflow uses Wan VACE (Wan 2.2 Fun VACE or Wan 2.1 VACE, your choice!) to smooth out awkward motion transitions between video clips. If you have noisy frames at the start or end of your clips, this technique can also get rid of those.
 

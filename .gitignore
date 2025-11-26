@@ -1,0 +1,27 @@
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Large Model Files (Do NOT commit these!) ---
+# You should provide links to these in your README instead.
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# --- Generated Outputs ---
+# Keep your repo clean of test runs unless specifically saved as examples
+output/
+temp/
+*.tmp
+
+# --- Python / Environment (Just in case you add scripts later) ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env

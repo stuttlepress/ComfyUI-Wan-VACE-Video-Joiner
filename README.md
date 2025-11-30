@@ -10,7 +10,8 @@ I've used this workflow to join first-last frame videos for some time and I thou
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
 
 ## Usage
-Detailed usage instructions can be found in the workflow. Please read this carefully. **This is not a ready to run workflow. You need to modify it to fit your system.** Directions about what to modify are in the instructions.
+***This is not a ready to run workflow. You need to modify it to fit your system.***
+What runs well on my system will not necessarily run well on yours. Configure this workflow to use the same model type and conditioning that you use in your standard Wan workflow. More detailed configuration and usage instructions can be found in the workflow. Please read this carefully.
 
 ## Dependencies
 I've used native nodes and tried to keep the custom node dependencies to a minimum. The following packages are required. All of them are installable through the Manager.
@@ -44,9 +45,6 @@ You'll need some combination of these models to run the workflow. As already men
   - [GGUF](https://huggingface.co/Kijai/WanVideo_comfy_GGUF/tree/main/VACE)
 
 ## Troubleshooting
+- **The size of tensor a must match the size of tensor b at non-singleton dimension 1** - Check that both dimensions of your input videos are divisible by 16 and change this if they're not. Fun fact: 1080 is not divisible by 16!
 - **Brightness/color shift** - VACE can sometimes affect the brightness or saturation of the clips it generates. I don't know how to avoid this tendency, I think it's baked into the model, unfortunately. Disabling lightx2v speed loras can help, as can making sure you use the exact same lora(s) and strength in this workflow that you used when generating your clips. Some people have reported success using a color match node before output of the clips in this workflow. I think specific solutions vary by case, though. The most consistent mitigation I have found is to interpolate framerate up to 30 or 60 fps after using this workflow. The interpolation decreases how perceptible the color shift is. The shift is still there, but it's spread out over 60 frames instead over 16, so it doesn't look like a sudden change to our eyes any more.
-
 - **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.
-
-- **Video resolution** - It has been reported that the workflow can silently fail when dimensions of the input videos are not divisible by 16. I've been too lazy to test this yet, but if you're having unexplainable problems, consider this.
-

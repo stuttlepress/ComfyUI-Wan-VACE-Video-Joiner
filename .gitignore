@@ -25,3 +25,5 @@ __pycache__/
 venv/
 .venv/
 .env
+
+TODO.md

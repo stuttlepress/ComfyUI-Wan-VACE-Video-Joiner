@@ -1,6 +1,6 @@
 # ComfyUI Wan VACE Video Joiner
 
-[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) | [Reddit Discussion](https://www.reddit.com/r/comfyui/comments/1o0l5l7/wan_vace_clip_joiner_native_workflow)
+[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299)
 
 This workflow uses Wan VACE (Wan 2.2 Fun VACE or Wan 2.1 VACE, your choice!) to smooth out awkward motion transitions between video clips. If you have noisy frames at the start or end of your clips, this technique can also get rid of those.
 
@@ -8,6 +8,24 @@ I've used this workflow to join first-last frame videos for some time and I thou
 
 ## What it Does
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
+
+## Changelog
+- **v2.0**
+  - Workflow redesign. Core functionality is the same, but hopefully usability is improved
+  - Added cross fade at VACE boundaries to mitigate brightness/color shift
+  - Save intermediate work as 16 bit png instead of ffv1
+  - Integrated video join into the main workflow
+  - Excessive documentation
+
+- **v1.3**
+  - removed lingering custom primitive node
+
+- **v1.2**
+  - Sort the input directory list.  
+
+- **v1.1**
+  - Preserve input framerate in workflow VACE outputs. Previously, all output was forced to 16fps. Note, you must manually set the framerate in the Join & Save output.  
+  - Changed default model/sampler to Wan 2.2 Fun VACE fp8/KSampler. GGUF, MoE, 2.1 are still available in the bypassed subgraphs.
 
 ## Usage
 ***This is not a ready to run workflow. You need to modify it to fit your system.***
@@ -27,7 +45,7 @@ The workflow uses subgraphs, so your ComfyUI needs to be relatively up-to-date.
 
 I have not tested this workflow under the new Nodes 2.0 UI.
 
-Model loading and inference is isolated in a subgraph, so It should be easy to modify this workflow for your preferred setup. Just replace the provided sampler subgraph with one that implements your stuff, then plug it into the workflow.
+Model loading and inference is isolated in subgraphs, so It should be easy to modify this workflow for your preferred setup. Just replace the provided subgraphs with one that implements your stuff, then plug it into the workflow.
 
 I am happy to answer questions about the workflow. I am less happy to instruct you on the basics of ComfyUI usage.
 

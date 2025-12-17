@@ -10,6 +10,8 @@ I've used this workflow to join first-last frame videos for some time and I thou
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
 
 ## Changelog
+- **v2.1**
+  - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output 
 - **v2.0**
   - Workflow redesign. Core functionality is the same, but hopefully usability is improved
   - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. I am not entirely comfortable with this version and consider it experimental. The ComfyUI-Easy-Use For Loop implementation is janky and requires some extra, otherwise useless code to make it work. But it lets you run with one click! Use with caution. All VACE join features are identical between the workflows. Looping is the only difference.

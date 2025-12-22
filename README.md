@@ -10,8 +10,15 @@ I've used this workflow to join first-last frame videos for some time and I thou
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
 
 ## Changelog
+- **v2.2** *Complexity Reduction Release*
+  - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.
+  - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers, but it's up to you to bring them and set them up.
+  - Custom node dependencies reduced.
+  - Un-subgraphed some functions. Sadly, this powerful and useful feature is still too unstable to distribute to users on varying versions of ComfyUI.
+
 - **v2.1**
   - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output 
+
 - **v2.0**
   - Workflow redesign. Core functionality is the same, but hopefully usability is improved
   - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. I am not entirely comfortable with this version and consider it experimental. The ComfyUI-Easy-Use For Loop implementation is janky and requires some extra, otherwise useless code to make it work. But it lets you run with one click! Use with caution. All VACE join features are identical between the workflows. Looping is the only difference.
@@ -34,7 +41,7 @@ The workflow iterates over any number of video clips in a directory, generating 
 
 ## Usage
 ***This is not a ready to run workflow. You need to configure it to fit your system.***
-What runs well on my system will not necessarily run well on yours. Configure this workflow to use the same model type and conditioning that you use in your standard Wan workflow. Detailed configuration and usage instructions can be found in the workflow. Please read carefully.
+What runs well on my system will not necessarily run well on yours. Configure this workflow to use a VACE model of the same type that you use in your standard Wan workflow. Detailed configuration and usage instructions can be found in the workflow. Please read carefully.
 
 ## Dependencies
 I've used native nodes and tried to keep the custom node dependencies to a minimum. The following packages are required. All of them are installable through the Manager.
@@ -46,9 +53,6 @@ I've used native nodes and tried to keep the custom node dependencies to a minim
 - [ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper) - new for version 2. Supplies a handy node that simplifies VACE control video creation.
 - [ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use) - new for version 2. Only required for the loop version of the workflow. Needed for the For Loop nodes.
 - [ComfyUI_essentials](https://github.com/cubiq/ComfyUI_essentials) - new for version 2. Used for logging to the console.
-- [ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF) - only needed if you'll be loading GGUF models. If not, you can delete the sampler subgraph that uses GGUF to remove the requirement.
-- [KSampler for Wan 2.2. MoE for ComfyUI](https://github.com/stduhpf/ComfyUI-WanMoeKSampler) - only needed if you plan to use the MoE KSampler. If not, you can delete the MoE sampler subgraph to remove the requirement.
-- [ComfyUI TripleKSampler](https://github.com/VraethrDalkr/ComfyUI-TripleKSampler) - only needed if you plan to use the TripleK Sampler. If not, you can delete the TripleK Sampler subgraph to remove the requirement.
 
 **I have not tested this workflow under the Nodes 2.0 UI.**
 
@@ -74,3 +78,4 @@ You'll need some combination of these models to run the workflow. As already men
 - **Brightness/color shift** - VACE can sometimes affect the brightness or saturation of the clips it generates. I don't know how to avoid this tendency, I think it's baked into the model, unfortunately. Disabling lightx2v speed loras can help, as can making sure you use the exact same lora(s) and strength in this workflow that you used when generating your clips. Some people have reported success using a color match node before output of the clips in this workflow. I think specific solutions vary by case, though. The most consistent mitigation I have found is to interpolate framerate up to 30 or 60 fps after using this workflow. The interpolation decreases how perceptible the color shift is. The shift is still there, but it's spread out over 60 frames instead over 16, so it doesn't look like a sudden change to our eyes any more.
 - **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.
 - **IndexError: list index out of range** - Your input video may be too small for the parameters you have specified. The minimum size for a video will be `(context_frames + replace_frames) * 2 + 1`. Confirm that all of your input videos have at least this minimum number of frames.
+- **Out of memory at the video join step** - The final video combine step is system RAM intensive. If you have a lot of input videos, you could run out of memory here. If this happens, use the VideoHelperSuite Meta Batch Manager to accomplish the combine in smaller chunks. A note in the workflow goes into more detail about exactly how to do this.

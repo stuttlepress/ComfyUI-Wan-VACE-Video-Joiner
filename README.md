@@ -10,6 +10,7 @@ I've used this workflow to join first-last frame videos for some time and I thou
 The workflow iterates over any number of video clips in a directory, generating smooth transitions between them by replacing a configurable number of frames at the transition. The frames found just before and just after the transition are used as context for generating the replacement frames. The number of context frames is also configurable. Optionally, the workflow can also join the smoothed clips together. Or you can accomplish this in your favorite video editor.
 
 ## Changelog
+- **[Lightweight workflow added.](README-lightweight.md)**
 - **v2.2** *Complexity Reduction Release*
   - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.
   - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers, but it's up to you to bring them and set them up.

@@ -7,12 +7,14 @@ This workflow uses Wan VACE to smooth out awkward motion transitions between vid
 ## What it Does
 This is a lightweight, (almost) no custom nodes ComfyUI workflow meant to quickly join two videos together with VACE and a minimum of fuss. Just load your videos and click Run. 
 
-If you need configurable transition parameters, mitigation of color/brightness artifacts, optimization options, try the full workflow instead.
+If you need to automatically join a large number of clips, mitigation of color/brightness artifacts, optimization options, try the full workflow instead.
 
 ## Dependencies
-[ComfyUI-DigbyWan](https://github.com/JosDigby/ComfyUI-DigbyWan) is required for this workflow. It provides a node that replaces a large amount of awkward spaghetti workflow math, making this lightweight workflow version possible.
+My [ComfyUI-Wan-VACE-Prep](https://github.com/stuttlepress/Comfyui-Wan-VACE-Prep) custom node is required for this workflow. It replaces a large amount of awkward spaghetti workflow math, making this lightweight workflow version possible.
+In ComfyUI Manager, search for *Wan VACE Prep* or just load the workflow and then visit the **Missing** tab in Manager.
+This is a very lightweight custom node with no dependencies, so it is highly unlikely to break your system, if that is something you worry about.
 
-**I have not tested this workflow under the Nodes 2.0 UI.**
+**I have not tested this workflow or the custom node under the Nodes 2.0 UI.**
 
 ## Configuration and Models
 You'll need some combination of these models to run the workflow. As already mentioned, this workflow will not run properly on your system until you configure it properly. You probably already have a Wan video generation workflow that runs well on your system. You need to configure this workflow similarly to your generation workflow. The *Sampler* subgraph contains KSampler nodes and model loading nodes. Have your way with these until it feels right to you. Enable the sageattention and torch compile nodes if you know your system supports them. Just make sure all the subgraph inputs and outputs are correctly getting and setting data, and crucially, that the diffusion model you load is one of *Wan2.2 Fun VACE* or *Wan2.1 VACE*. GGUFs work fine, but non-VACE models do not.

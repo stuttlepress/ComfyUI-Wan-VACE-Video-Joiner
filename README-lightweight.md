@@ -35,3 +35,12 @@ You'll need some combination of these models to run the workflow. As already men
 - **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.
 - If you can't make the workflow work, update ComfyUI and try again. If you're not willing to update ComfyUI, I can't help you. We have to be working from the same starting point.
 - Feel free to [open an issue on github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner/issues). This is the most direct way to engage me. If you want a head start, paste your complete console log from a failed run into your issue.
+
+## Changelog
+- **v1.0.3** Image Batch node fix.  
+I don't quite understand the sequence of events, but since I updated ComfyUI to 0.7.0, the *Batch Images* node is back to its old static self. The dynamic behavior it had when I released this workflow is gone. I don't *think* I accidentally used a custom version of that node previously, but that is actually the most likely explanation. Anyway, this is hopefully the end of `Prompt outputs failed validation: BatchImagesNode: - Required input is missing: image1` messages.
+
+- **v1.0.2** Core custom node change.
+  - The VACE node I began with wasn't quite flexible enough, so I moved to [my own custom node](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Prep) instead.  
+
+- **v1.0.0** Initial release. 

@@ -1,8 +1,8 @@
 {
   "id": "4e2ce943-4931-48d4-bf8e-80dcded540d7",
   "revision": 0,
-  "last_node_id": 744,
-  "last_link_id": 1117,
+  "last_node_id": 745,
+  "last_link_id": 1131,
   "nodes": [
     {
       "id": 423,
@@ -180,15 +180,15 @@
       ],
       "title": "New Frames",
       "properties": {
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "0.9.92",
         "Node name for S&R": "mxSlider",
         "value": 0,
         "min": 0,
         "max": 200,
         "step": 4,
         "decimals": 0,
-        "snap": true
+        "snap": true,
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "0.9.92"
       },
       "widgets_values": [
         0,
@@ -598,9 +598,9 @@
       ],
       "title": "Negative Prompt (optional)",
       "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
         "cnr_id": "comfy-core",
-        "ver": "0.3.62",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "ver": "0.3.62"
       },
       "widgets_values": [
         ""
@@ -682,9 +682,9 @@
       ],
       "title": "Post-Processing: Color Match",
       "properties": {
+        "Node name for S&R": "PrimitiveBoolean",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "PrimitiveBoolean"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         false
@@ -720,9 +720,9 @@
       ],
       "title": "Positive Prompt (optional)",
       "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline",
         "cnr_id": "comfy-core",
-        "ver": "0.3.62",
-        "Node name for S&R": "PrimitiveStringMultiline"
+        "ver": "0.3.62"
       },
       "widgets_values": [
         ""
@@ -1072,15 +1072,15 @@
       ],
       "title": "Context Frames",
       "properties": {
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "0.9.92",
         "Node name for S&R": "mxSlider",
         "value": 8,
         "min": 4,
         "max": 40,
         "step": 4,
         "decimals": 0,
-        "snap": true
+        "snap": true,
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "0.9.92"
       },
       "widgets_values": [
         8,
@@ -1089,40 +1089,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 652,
-      "type": "GetNode",
-      "pos": [
-        -3950,
-        3840
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 19,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            1083
-          ]
-        }
-      ],
-      "title": "Get_index",
-      "properties": {},
-      "widgets_values": [
-        "index"
-      ],
-      "color": "#1b4669",
-      "bgcolor": "#29699c"
     },
     {
       "id": 430,
@@ -1138,16 +1104,14 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
           "name": "INT",
           "type": "INT",
-          "links": [
-            1023
-          ]
+          "links": []
         }
       ],
       "title": "Get_new_frames",
@@ -1298,7 +1262,7 @@
         {
           "name": "STRING",
           "type": "STRING",
-          "link": 1084
+          "link": 1127
         }
       ],
       "outputs": [
@@ -1374,9 +1338,9 @@
       ],
       "title": "Video Info",
       "properties": {
+        "Node name for S&R": "VHS_VideoInfoLoaded",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-        "Node name for S&R": "VHS_VideoInfoLoaded"
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
       },
       "widgets_values": {},
       "color": "#233",
@@ -1436,7 +1400,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1445,7 +1409,7 @@
           "type": "STRING",
           "links": [
             343,
-            1081
+            1122
           ]
         }
       ],
@@ -1475,7 +1439,7 @@
         {
           "name": "BOOLEAN",
           "type": "BOOLEAN",
-          "link": 1086
+          "link": 1129
         }
       ],
       "outputs": [
@@ -1507,7 +1471,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1539,7 +1503,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1573,7 +1537,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1647,7 +1611,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1681,7 +1645,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1736,7 +1700,7 @@
           "widget": {
             "name": "video"
           },
-          "link": 1087
+          "link": 1130
         }
       ],
       "outputs": [
@@ -1767,9 +1731,9 @@
       ],
       "title": "Load First Video",
       "properties": {
+        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530",
-        "Node name for S&R": "VHS_LoadVideoFFmpegPath"
+        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
       },
       "widgets_values": {
         "video": "",
@@ -1801,8 +1765,8 @@
       "id": 651,
       "type": "GetNode",
       "pos": [
-        -3950,
-        3800
+        -3980,
+        3770
       ],
       "size": [
         210,
@@ -1811,7 +1775,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1819,7 +1783,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            1082
+            1123
           ]
         }
       ],
@@ -1906,9 +1870,9 @@
       ],
       "title": "_clip2",
       "properties": {
+        "Node name for S&R": "StringConcatenate",
         "cnr_id": "comfy-core",
-        "ver": "0.5.1",
-        "Node name for S&R": "StringConcatenate"
+        "ver": "0.5.1"
       },
       "widgets_values": [
         "",
@@ -1930,7 +1894,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1985,9 +1949,9 @@
       ],
       "title": "_clip3",
       "properties": {
+        "Node name for S&R": "StringConcatenate",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "StringConcatenate"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "",
@@ -2009,7 +1973,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2043,7 +2007,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 29,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2075,7 +2039,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 30,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2132,9 +2096,9 @@
       ],
       "title": "_clip1",
       "properties": {
+        "Node name for S&R": "StringConcatenate",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "StringConcatenate"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "",
@@ -2174,7 +2138,7 @@
           "name": "result",
           "type": "*",
           "links": [
-            1080
+            1121
           ]
         }
       ],
@@ -2208,7 +2172,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 32,
+      "order": 31,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2318,7 +2282,7 @@
         90
       ],
       "flags": {},
-      "order": 33,
+      "order": 32,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2413,9 +2377,9 @@
       ],
       "title": "cross fade?",
       "properties": {
+        "Node name for S&R": "Basic data handling: IfElse",
         "cnr_id": "basic_data_handling",
-        "ver": "1.0.0",
-        "Node name for S&R": "Basic data handling: IfElse"
+        "ver": "1.0.0"
       },
       "widgets_values": [
         false
@@ -2437,7 +2401,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 33,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2469,7 +2433,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 34,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2535,9 +2499,9 @@
       ],
       "title": "color match?",
       "properties": {
+        "Node name for S&R": "Basic data handling: IfElse",
         "cnr_id": "basic_data_handling",
-        "ver": "1.0.0",
-        "Node name for S&R": "Basic data handling: IfElse"
+        "ver": "1.0.0"
       },
       "widgets_values": [
         false
@@ -2630,7 +2594,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 36,
+      "order": 35,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2722,9 +2686,9 @@
       ],
       "title": "Clip3 Lossless Save",
       "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-        "Node name for S&R": "VHS_VideoCombine"
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
       },
       "widgets_values": {
         "frame_rate": 16,
@@ -2794,7 +2758,7 @@
           "widget": {
             "name": "video"
           },
-          "link": 1088
+          "link": 1131
         }
       ],
       "outputs": [
@@ -2823,9 +2787,9 @@
       ],
       "title": "Load Second Video",
       "properties": {
+        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530",
-        "Node name for S&R": "VHS_LoadVideoFFmpegPath"
+        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
       },
       "widgets_values": {
         "video": "",
@@ -2865,7 +2829,7 @@
         58
       ],
       "flags": {},
-      "order": 37,
+      "order": 36,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2878,9 +2842,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "VAELoader",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "VAELoader"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "wan_2.1_vae.safetensors"
@@ -2900,7 +2864,7 @@
         360
       ],
       "flags": {},
-      "order": 38,
+      "order": 37,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2964,7 +2928,7 @@
         100
       ],
       "flags": {},
-      "order": 39,
+      "order": 38,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3217,7 +3181,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 39,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3249,7 +3213,7 @@
         380
       ],
       "flags": {},
-      "order": 41,
+      "order": 40,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3273,7 +3237,7 @@
         750
       ],
       "flags": {},
-      "order": 42,
+      "order": 41,
       "mode": 4,
       "inputs": [
         {
@@ -3484,7 +3448,7 @@
         58
       ],
       "flags": {},
-      "order": 43,
+      "order": 42,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3498,9 +3462,9 @@
       ],
       "title": "Input Path",
       "properties": {
+        "Node name for S&R": "InputPath",
         "cnr_id": "comfy-core",
-        "ver": "0.3.59",
-        "Node name for S&R": "InputPath"
+        "ver": "0.3.59"
       },
       "widgets_values": [
         "F:\\comfyui-workdirs\\output\\spaceship\\raw"
@@ -3520,7 +3484,7 @@
         58
       ],
       "flags": {},
-      "order": 44,
+      "order": 43,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3534,9 +3498,9 @@
       ],
       "title": "Project Name",
       "properties": {
+        "Node name for S&R": "ProjectName",
         "cnr_id": "comfy-core",
-        "ver": "0.3.59",
-        "Node name for S&R": "ProjectName"
+        "ver": "0.3.59"
       },
       "widgets_values": [
         "spaceship"
@@ -3564,7 +3528,7 @@
         {
           "name": "BOOLEAN",
           "type": "BOOLEAN",
-          "link": 1085
+          "link": 1128
         }
       ],
       "outputs": [
@@ -3586,8 +3550,8 @@
       "id": 716,
       "type": "GetNode",
       "pos": [
-        -3950,
-        3880
+        -3980,
+        3850
       ],
       "size": [
         210,
@@ -3596,7 +3560,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 45,
+      "order": 44,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3604,7 +3568,7 @@
           "name": "BOOLEAN",
           "type": "BOOLEAN",
           "links": [
-            1091
+            1125
           ]
         }
       ],
@@ -3672,14 +3636,6 @@
           "link": 1022
         },
         {
-          "name": "add_frames",
-          "type": "INT",
-          "widget": {
-            "name": "add_frames"
-          },
-          "link": 1023
-        },
-        {
           "name": "debug",
           "type": "BOOLEAN",
           "widget": {
@@ -3726,9 +3682,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "WanVACEPrepBatch",
         "cnr_id": "comfyui-wan-vace-prep",
-        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9",
-        "Node name for S&R": "WanVACEPrepBatch"
+        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
       },
       "widgets_values": [
         false,
@@ -3825,9 +3781,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "Basic data handling: FlowSelect",
         "cnr_id": "basic_data_handling",
-        "ver": "1.0.0",
-        "Node name for S&R": "Basic data handling: FlowSelect"
+        "ver": "1.0.0"
       },
       "widgets_values": [
         false
@@ -3849,7 +3805,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 46,
+      "order": 45,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3920,9 +3876,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "StringReplace",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "StringReplace"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         "",
@@ -3944,7 +3900,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 47,
+      "order": 46,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3957,9 +3913,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "Basic data handling: PathOutputDir",
         "cnr_id": "basic_data_handling",
-        "ver": "1.0.0",
-        "Node name for S&R": "Basic data handling: PathOutputDir"
+        "ver": "1.0.0"
       },
       "widgets_values": [],
       "color": "#223",
@@ -4010,9 +3966,9 @@
       ],
       "title": "output / work_dir",
       "properties": {
+        "Node name for S&R": "StringConcatenate",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "StringConcatenate"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         "output",
@@ -4034,7 +3990,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 48,
+      "order": 47,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4064,7 +4020,7 @@
         110
       ],
       "flags": {},
-      "order": 49,
+      "order": 48,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4090,7 +4046,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 50,
+      "order": 49,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4142,9 +4098,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "VHS_SelectFilename",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "1.7.9",
-        "Node name for S&R": "VHS_SelectFilename"
+        "ver": "1.7.9"
       },
       "widgets_values": {
         "index": -1
@@ -4194,9 +4150,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "StringConcatenate",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "StringConcatenate"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         "",
@@ -4218,7 +4174,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 51,
+      "order": 50,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4252,7 +4208,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 52,
+      "order": 51,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4269,117 +4225,6 @@
       "widgets_values": [
         "work_dir"
       ]
-    },
-    {
-      "id": 712,
-      "type": "VACEBatchContext",
-      "pos": [
-        -3710,
-        3620
-      ],
-      "size": [
-        210,
-        230
-      ],
-      "flags": {},
-      "order": 95,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input_list",
-          "type": "STRING",
-          "link": 1080
-        },
-        {
-          "name": "input_dir",
-          "type": "STRING",
-          "widget": {
-            "name": "input_dir"
-          },
-          "link": 1081
-        },
-        {
-          "name": "project_name",
-          "type": "STRING",
-          "widget": {
-            "name": "project_name"
-          },
-          "link": 1082
-        },
-        {
-          "name": "index",
-          "type": "INT",
-          "widget": {
-            "name": "index"
-          },
-          "link": 1083
-        },
-        {
-          "name": "debug",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "debug"
-          },
-          "link": 1091
-        }
-      ],
-      "outputs": [
-        {
-          "name": "work_dir",
-          "type": "STRING",
-          "links": [
-            1096
-          ]
-        },
-        {
-          "name": "workfile_prefix",
-          "type": "STRING",
-          "links": [
-            1084
-          ]
-        },
-        {
-          "name": "is_first",
-          "type": "BOOLEAN",
-          "links": [
-            1085
-          ]
-        },
-        {
-          "name": "is_last",
-          "type": "BOOLEAN",
-          "links": [
-            1086
-          ]
-        },
-        {
-          "name": "video_1_filename",
-          "type": "STRING",
-          "links": [
-            1087
-          ]
-        },
-        {
-          "name": "video_2_filename",
-          "type": "STRING",
-          "links": [
-            1088
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-wan-vace-prep",
-        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9",
-        "Node name for S&R": "VACEBatchContext"
-      },
-      "widgets_values": [
-        "",
-        ".",
-        0,
-        true
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     },
     {
       "id": 723,
@@ -4401,7 +4246,7 @@
         {
           "name": "STRING",
           "type": "STRING",
-          "link": 1096
+          "link": 1126
         }
       ],
       "outputs": [
@@ -4431,7 +4276,7 @@
         180
       ],
       "flags": {},
-      "order": 53,
+      "order": 52,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4547,9 +4392,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "VRAM_Debug",
         "cnr_id": "comfyui-kjnodes",
-        "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-        "Node name for S&R": "VRAM_Debug"
+        "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
       },
       "widgets_values": [
         true,
@@ -4571,7 +4416,7 @@
         150
       ],
       "flags": {},
-      "order": 54,
+      "order": 53,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4625,9 +4470,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadVideosFromFolderSimple",
         "cnr_id": "comfyui-wan-vace-prep",
-        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9",
-        "Node name for S&R": "LoadVideosFromFolderSimple"
+        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
       },
       "widgets_values": [
         "",
@@ -4650,7 +4495,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 55,
+      "order": 54,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4734,9 +4579,9 @@
       ],
       "title": "Clip2 Lossless Save",
       "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-        "Node name for S&R": "VHS_VideoCombine"
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
       },
       "widgets_values": {
         "frame_rate": 16,
@@ -4837,9 +4682,9 @@
       ],
       "title": "Clip1 Lossless Save",
       "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-        "Node name for S&R": "VHS_VideoCombine"
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
       },
       "widgets_values": {
         "frame_rate": 16,
@@ -4888,7 +4733,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 56,
+      "order": 55,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4922,7 +4767,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 57,
+      "order": 56,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4956,7 +4801,7 @@
         270
       ],
       "flags": {},
-      "order": 58,
+      "order": 57,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4980,7 +4825,7 @@
         130
       ],
       "flags": {},
-      "order": 59,
+      "order": 58,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5004,7 +4849,7 @@
         60
       ],
       "flags": {},
-      "order": 60,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -5028,9 +4873,9 @@
       ],
       "title": "Post-Processing: Cross Fade",
       "properties": {
+        "Node name for S&R": "PrimitiveBoolean",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "PrimitiveBoolean"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         true
@@ -5101,9 +4946,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
         "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-        "Node name for S&R": "VHS_VideoCombine"
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
       },
       "widgets_values": {
         "frame_rate": 8,
@@ -5225,7 +5070,7 @@
         150
       ],
       "flags": {},
-      "order": 61,
+      "order": 60,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5251,7 +5096,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 62,
+      "order": 61,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5281,7 +5126,7 @@
         90
       ],
       "flags": {},
-      "order": 63,
+      "order": 62,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5294,9 +5139,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "UNETLoader",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "UNETLoader"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "WAN 2.2\\Fun\\wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors",
@@ -5317,7 +5162,7 @@
         90
       ],
       "flags": {},
-      "order": 64,
+      "order": 63,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5330,9 +5175,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "UNETLoader",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "UNETLoader"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "WAN 2.2\\Fun\\wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors",
@@ -5353,7 +5198,7 @@
         110
       ],
       "flags": {},
-      "order": 65,
+      "order": 64,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5366,9 +5211,9 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "CLIPLoader",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "CLIPLoader"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
@@ -5390,7 +5235,7 @@
         58
       ],
       "flags": {},
-      "order": 66,
+      "order": 65,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5404,9 +5249,9 @@
       ],
       "title": "Enable Debug",
       "properties": {
+        "Node name for S&R": "PrimitiveBoolean",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "PrimitiveBoolean"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         true
@@ -5426,7 +5271,7 @@
         100
       ],
       "flags": {},
-      "order": 67,
+      "order": 66,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5440,9 +5285,9 @@
       ],
       "title": "Index",
       "properties": {
+        "Node name for S&R": "PrimitiveInt",
         "cnr_id": "comfy-core",
-        "ver": "0.4.0",
-        "Node name for S&R": "PrimitiveInt"
+        "ver": "0.4.0"
       },
       "widgets_values": [
         0,
@@ -5463,7 +5308,7 @@
         440
       ],
       "flags": {},
-      "order": 68,
+      "order": 67,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5487,7 +5332,7 @@
         970
       ],
       "flags": {},
-      "order": 69,
+      "order": 68,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5511,7 +5356,7 @@
         30
       ],
       "flags": {},
-      "order": 70,
+      "order": 69,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5525,15 +5370,15 @@
       ],
       "title": "Replace Frames",
       "properties": {
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "0.9.92",
         "Node name for S&R": "mxSlider",
         "value": 8,
         "min": 0,
         "max": 40,
         "step": 4,
         "decimals": 0,
-        "snap": true
+        "snap": true,
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "0.9.92"
       },
       "widgets_values": [
         8,
@@ -5555,7 +5400,7 @@
         82
       ],
       "flags": {},
-      "order": 71,
+      "order": 70,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5569,9 +5414,9 @@
       ],
       "title": "Seed",
       "properties": {
+        "Node name for S&R": "PrimitiveInt",
         "cnr_id": "comfy-core",
-        "ver": "0.12.2",
-        "Node name for S&R": "PrimitiveInt"
+        "ver": "0.12.2"
       },
       "widgets_values": [
         423332426221692,
@@ -5594,7 +5439,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 72,
+      "order": 71,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5618,7 +5463,7 @@
         390
       ],
       "flags": {},
-      "order": 73,
+      "order": 72,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5682,6 +5527,149 @@
       "widgets_values": [],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 652,
+      "type": "GetNode",
+      "pos": [
+        -3980,
+        3810
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 73,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1124
+          ]
+        }
+      ],
+      "title": "Get_index",
+      "properties": {},
+      "widgets_values": [
+        "index"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 745,
+      "type": "WanVACEBatchContext",
+      "pos": [
+        -3750,
+        3590
+      ],
+      "size": [
+        230,
+        240
+      ],
+      "flags": {},
+      "order": 95,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_list",
+          "type": "STRING",
+          "link": 1121
+        },
+        {
+          "name": "input_dir",
+          "type": "STRING",
+          "widget": {
+            "name": "input_dir"
+          },
+          "link": 1122
+        },
+        {
+          "name": "project_name",
+          "type": "STRING",
+          "widget": {
+            "name": "project_name"
+          },
+          "link": 1123
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "widget": {
+            "name": "index"
+          },
+          "link": 1124
+        },
+        {
+          "name": "debug",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "debug"
+          },
+          "link": 1125
+        }
+      ],
+      "outputs": [
+        {
+          "name": "work_dir",
+          "type": "STRING",
+          "links": [
+            1126
+          ]
+        },
+        {
+          "name": "workfile_prefix",
+          "type": "STRING",
+          "links": [
+            1127
+          ]
+        },
+        {
+          "name": "is_first",
+          "type": "BOOLEAN",
+          "links": [
+            1128
+          ]
+        },
+        {
+          "name": "is_last",
+          "type": "BOOLEAN",
+          "links": [
+            1129
+          ]
+        },
+        {
+          "name": "video_1_filename",
+          "type": "STRING",
+          "links": [
+            1130
+          ]
+        },
+        {
+          "name": "video_2_filename",
+          "type": "STRING",
+          "links": [
+            1131
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WanVACEBatchContext"
+      },
+      "widgets_values": [
+        "",
+        ".",
+        0,
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -6110,14 +6098,6 @@
       "INT"
     ],
     [
-      1023,
-      430,
-      0,
-      674,
-      6,
-      "INT"
-    ],
-    [
       1025,
       674,
       1,
@@ -6310,78 +6290,6 @@
       "VAE"
     ],
     [
-      1080,
-      267,
-      0,
-      712,
-      0,
-      "STRING"
-    ],
-    [
-      1081,
-      53,
-      0,
-      712,
-      1,
-      "STRING"
-    ],
-    [
-      1082,
-      651,
-      0,
-      712,
-      2,
-      "STRING"
-    ],
-    [
-      1083,
-      652,
-      0,
-      712,
-      3,
-      "INT"
-    ],
-    [
-      1084,
-      712,
-      1,
-      658,
-      0,
-      "STRING"
-    ],
-    [
-      1085,
-      712,
-      2,
-      684,
-      0,
-      "BOOLEAN"
-    ],
-    [
-      1086,
-      712,
-      3,
-      682,
-      0,
-      "BOOLEAN"
-    ],
-    [
-      1087,
-      712,
-      4,
-      661,
-      2,
-      "STRING"
-    ],
-    [
-      1088,
-      712,
-      5,
-      662,
-      2,
-      "STRING"
-    ],
-    [
       1090,
       713,
       0,
@@ -6390,19 +6298,11 @@
       "BOOLEAN"
     ],
     [
-      1091,
-      716,
-      0,
-      712,
-      4,
-      "BOOLEAN"
-    ],
-    [
       1092,
       717,
       0,
       674,
-      7,
+      6,
       "BOOLEAN"
     ],
     [
@@ -6418,14 +6318,6 @@
       718,
       0,
       719,
-      0,
-      "STRING"
-    ],
-    [
-      1096,
-      712,
-      0,
-      723,
       0,
       "STRING"
     ],
@@ -6476,6 +6368,94 @@
       666,
       0,
       "IMAGE"
+    ],
+    [
+      1121,
+      267,
+      0,
+      745,
+      0,
+      "STRING"
+    ],
+    [
+      1122,
+      53,
+      0,
+      745,
+      1,
+      "STRING"
+    ],
+    [
+      1123,
+      651,
+      0,
+      745,
+      2,
+      "STRING"
+    ],
+    [
+      1124,
+      652,
+      0,
+      745,
+      3,
+      "INT"
+    ],
+    [
+      1125,
+      716,
+      0,
+      745,
+      4,
+      "BOOLEAN"
+    ],
+    [
+      1126,
+      745,
+      0,
+      723,
+      0,
+      "STRING"
+    ],
+    [
+      1127,
+      745,
+      1,
+      658,
+      0,
+      "STRING"
+    ],
+    [
+      1128,
+      745,
+      2,
+      684,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      1129,
+      745,
+      3,
+      682,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      1130,
+      745,
+      4,
+      661,
+      2,
+      "STRING"
+    ],
+    [
+      1131,
+      745,
+      5,
+      662,
+      2,
+      "STRING"
     ]
   ],
   "groups": [
@@ -6687,9 +6667,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.60",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.60"
             },
             "widgets_values": [
               ".DS_Store"
@@ -6738,9 +6718,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: DataListIndex",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: DataListIndex"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               0,
@@ -6791,9 +6771,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: DataListIndex",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: DataListIndex"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               0,
@@ -6840,9 +6820,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: GreaterThanOrEqual",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: GreaterThanOrEqual"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               0,
@@ -6889,9 +6869,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: GreaterThanOrEqual",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: GreaterThanOrEqual"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               0,
@@ -6942,9 +6922,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: DataListPop",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: DataListPop"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               -1
@@ -7004,9 +6984,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: DataListPop",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: DataListPop"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               -1
@@ -7064,9 +7044,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               false
@@ -7110,9 +7090,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: DataListSort",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: DataListSort"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               "False"
@@ -7172,9 +7152,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               false
@@ -7208,9 +7188,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.60",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.60"
             },
             "widgets_values": [
               "Thumbs.db"
@@ -7259,9 +7239,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: PathListDir",
               "cnr_id": "basic_data_handling",
-              "ver": "0.6.0",
-              "Node name for S&R": "Basic data handling: PathListDir"
+              "ver": "0.6.0"
             },
             "widgets_values": [
               "",
@@ -7837,9 +7817,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "TorchCompileModelWanVideoV2",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "TorchCompileModelWanVideoV2"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "inductor",
@@ -7887,9 +7867,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "TorchCompileModelWanVideoV2",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "TorchCompileModelWanVideoV2"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "inductor",
@@ -8219,9 +8199,9 @@
             ],
             "title": "lightx2v?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -8357,9 +8337,9 @@
             ],
             "title": "compile?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -8419,9 +8399,9 @@
             ],
             "title": "compile?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -8549,9 +8529,9 @@
             ],
             "title": "NAG?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -8611,9 +8591,9 @@
             ],
             "title": "NAG?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -8915,9 +8895,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "CLIPTextEncode",
               "cnr_id": "comfy-core",
               "ver": "0.3.45",
-              "Node name for S&R": "CLIPTextEncode",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
@@ -9006,9 +8986,9 @@
             ],
             "title": "CLIP Text Encode (Negative Prompt)",
             "properties": {
+              "Node name for S&R": "CLIPTextEncode",
               "cnr_id": "comfy-core",
               "ver": "0.3.34",
-              "Node name for S&R": "CLIPTextEncode",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
@@ -9251,9 +9231,9 @@
             ],
             "title": "sage attention?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "1.0.0"
             },
             "widgets_values": [
               false
@@ -9311,9 +9291,9 @@
             ],
             "title": "sage attention?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "1.0.0"
             },
             "widgets_values": [
               false
@@ -9431,9 +9411,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "VAEDecode",
               "cnr_id": "comfy-core",
-              "ver": "0.3.73",
-              "Node name for S&R": "VAEDecode"
+              "ver": "0.3.73"
             },
             "widgets_values": [],
             "color": "#223",
@@ -9478,9 +9458,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "WanVideoNAG",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6",
-              "Node name for S&R": "WanVideoNAG"
+              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6"
             },
             "widgets_values": [
               11,
@@ -9569,9 +9549,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               false
@@ -9615,9 +9595,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               false
@@ -9661,9 +9641,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               false
@@ -9707,9 +9687,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               true
@@ -9753,9 +9733,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -9800,9 +9780,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -9847,9 +9827,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -9894,9 +9874,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               ""
@@ -9940,9 +9920,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               ""
@@ -10066,9 +10046,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -10230,9 +10210,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "WanVideoNAG",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6",
-              "Node name for S&R": "WanVideoNAG"
+              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6"
             },
             "widgets_values": [
               11,
@@ -10397,9 +10377,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "WanVaceToVideo",
               "cnr_id": "comfy-core",
-              "ver": "0.3.75",
-              "Node name for S&R": "WanVaceToVideo"
+              "ver": "0.3.75"
             },
             "widgets_values": [
               832,
@@ -10444,9 +10424,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PathchSageAttentionKJ",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "PathchSageAttentionKJ"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "sageattn_qk_int8_pv_fp8_cuda++",
@@ -10488,9 +10468,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PathchSageAttentionKJ",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "PathchSageAttentionKJ"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "sageattn_qk_int8_pv_fp8_cuda++",
@@ -10578,9 +10558,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "TrimVideoLatent",
               "cnr_id": "comfy-core",
-              "ver": "0.3.75",
-              "Node name for S&R": "TrimVideoLatent"
+              "ver": "0.3.75"
             },
             "widgets_values": [
               0
@@ -10639,9 +10619,9 @@
             ],
             "title": "lightx2v?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -10722,9 +10702,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "ModelSamplingSD3",
               "cnr_id": "comfy-core",
-              "ver": "0.4.0",
-              "Node name for S&R": "ModelSamplingSD3"
+              "ver": "0.4.0"
             },
             "widgets_values": [
               5
@@ -10765,9 +10745,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "ModelSamplingSD3",
               "cnr_id": "comfy-core",
-              "ver": "0.4.0",
-              "Node name for S&R": "ModelSamplingSD3"
+              "ver": "0.4.0"
             },
             "widgets_values": [
               5
@@ -10943,9 +10923,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "KSamplerAdvanced",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "KSamplerAdvanced"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               "enable",
@@ -11022,9 +11002,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "KSamplerAdvanced",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "KSamplerAdvanced"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               "disable",
@@ -11094,9 +11074,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "LoraLoaderModelOnly",
               "cnr_id": "comfy-core",
-              "ver": "0.3.73",
-              "Node name for S&R": "LoraLoaderModelOnly"
+              "ver": "0.3.73"
             },
             "widgets_values": [
               "Wan 2.2\\T2V\\wan2.2_t2v_A14b_low_noise_lora_rank64_lightx2v_4step_1217.safetensors",
@@ -11158,9 +11138,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "LoraLoaderModelOnly",
               "cnr_id": "comfy-core",
-              "ver": "0.3.73",
-              "Node name for S&R": "LoraLoaderModelOnly"
+              "ver": "0.3.73"
             },
             "widgets_values": [
               "Wan 2.2\\T2V\\wan2.2_t2v_A14b_high_noise_lora_rank64_lightx2v_4step_1217.safetensors",
@@ -12136,9 +12116,9 @@
             ],
             "title": "Get context2 vace",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               -1,
@@ -12204,9 +12184,9 @@
             ],
             "title": "Get context2 original",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               -1,
@@ -12299,9 +12279,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "Basic data handling: CastToInt",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: CastToInt"
+              "ver": "1.0.0"
             },
             "widgets_values": []
           },
@@ -12362,9 +12342,9 @@
             ],
             "title": "Get context1 original",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               0,
@@ -12430,9 +12410,9 @@
             ],
             "title": "Get context1 vace",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               0,
@@ -12477,9 +12457,9 @@
             ],
             "title": "VACE frame count",
             "properties": {
+              "Node name for S&R": "VHS_GetImageCount",
               "cnr_id": "comfyui-videohelpersuite",
-              "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12",
-              "Node name for S&R": "VHS_GetImageCount"
+              "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
             },
             "widgets_values": {}
           },
@@ -12532,9 +12512,9 @@
             ],
             "title": "vace-(context*2)",
             "properties": {
+              "Node name for S&R": "Basic data handling: MathFormula",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: MathFormula"
+              "ver": "1.0.0"
             },
             "widgets_values": [
               "a-(b*2)"
@@ -12646,9 +12626,9 @@
             ],
             "title": "Cross Fade: video1 -> VACE",
             "properties": {
+              "Node name for S&R": "CrossFadeImages",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "CrossFadeImages"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               "ease_in",
@@ -12726,9 +12706,9 @@
             ],
             "title": "Get VACE frames",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               1,
@@ -12786,9 +12766,9 @@
             ],
             "title": "Cross Fade: VACE -> video2",
             "properties": {
+              "Node name for S&R": "CrossFadeImages",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "CrossFadeImages"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               "ease_in",
@@ -13392,9 +13372,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "TorchCompileModelWanVideoV2",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "TorchCompileModelWanVideoV2"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "inductor",
@@ -13725,9 +13705,9 @@
             ],
             "title": "lightx2v?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -13863,9 +13843,9 @@
             ],
             "title": "compile?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -13991,9 +13971,9 @@
             ],
             "title": "NAG?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "0.7.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "0.7.0"
             },
             "widgets_values": [
               false
@@ -14182,9 +14162,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "CLIPTextEncode",
               "cnr_id": "comfy-core",
               "ver": "0.3.45",
-              "Node name for S&R": "CLIPTextEncode",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
@@ -14273,9 +14253,9 @@
             ],
             "title": "CLIP Text Encode (Negative Prompt)",
             "properties": {
+              "Node name for S&R": "CLIPTextEncode",
               "cnr_id": "comfy-core",
               "ver": "0.3.34",
-              "Node name for S&R": "CLIPTextEncode",
               "widget_ue_connectable": {}
             },
             "widgets_values": [
@@ -14368,9 +14348,9 @@
             ],
             "title": "sage attention?",
             "properties": {
+              "Node name for S&R": "Basic data handling: IfElse",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: IfElse"
+              "ver": "1.0.0"
             },
             "widgets_values": [
               false
@@ -14488,9 +14468,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "VAEDecode",
               "cnr_id": "comfy-core",
-              "ver": "0.3.73",
-              "Node name for S&R": "VAEDecode"
+              "ver": "0.3.73"
             },
             "widgets_values": [],
             "color": "#223",
@@ -14535,9 +14515,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "WanVideoNAG",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6",
-              "Node name for S&R": "WanVideoNAG"
+              "ver": "acdd16a973460b5be5d92133a9217787f0e085c6"
             },
             "widgets_values": [
               11,
@@ -14626,9 +14606,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               false
@@ -14672,9 +14652,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               true
@@ -14718,9 +14698,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               true
@@ -14764,9 +14744,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveBoolean",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveBoolean"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               true
@@ -14810,9 +14790,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -14857,9 +14837,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -14904,9 +14884,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -14951,9 +14931,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               ""
@@ -14997,9 +14977,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveString",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveString"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               ""
@@ -15123,9 +15103,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PrimitiveInt",
               "cnr_id": "comfy-core",
-              "ver": "0.3.77",
-              "Node name for S&R": "PrimitiveInt"
+              "ver": "0.3.77"
             },
             "widgets_values": [
               0,
@@ -15315,9 +15295,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "PathchSageAttentionKJ",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8",
-              "Node name for S&R": "PathchSageAttentionKJ"
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
             },
             "widgets_values": [
               "sageattn_qk_int8_pv_fp8_cuda++",
@@ -15533,9 +15513,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "KSampler",
               "cnr_id": "comfy-core",
-              "ver": "0.4.0",
-              "Node name for S&R": "KSampler"
+              "ver": "0.4.0"
             },
             "widgets_values": [
               0,
@@ -15593,9 +15573,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "TrimVideoLatent",
               "cnr_id": "comfy-core",
-              "ver": "0.3.75",
-              "Node name for S&R": "TrimVideoLatent"
+              "ver": "0.3.75"
             },
             "widgets_values": [
               0
@@ -15744,9 +15724,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "ModelSamplingSD3",
               "cnr_id": "comfy-core",
-              "ver": "0.4.0",
-              "Node name for S&R": "ModelSamplingSD3"
+              "ver": "0.4.0"
             },
             "widgets_values": [
               5
@@ -15807,9 +15787,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "LoraLoaderModelOnly",
               "cnr_id": "comfy-core",
-              "ver": "0.3.73",
-              "Node name for S&R": "LoraLoaderModelOnly"
+              "ver": "0.3.73"
             },
             "widgets_values": [
               "Wan 2.1\\T2V\\lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors",
@@ -15935,9 +15915,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "WanVaceToVideo",
               "cnr_id": "comfy-core",
-              "ver": "0.3.75",
-              "Node name for S&R": "WanVaceToVideo"
+              "ver": "0.3.75"
             },
             "widgets_values": [
               832,
@@ -16747,9 +16727,9 @@
             ],
             "title": "Get reference frame",
             "properties": {
+              "Node name for S&R": "GetImageRangeFromBatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "GetImageRangeFromBatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               0,
@@ -16830,9 +16810,9 @@
             ],
             "title": "-1",
             "properties": {
+              "Node name for S&R": "Basic data handling: IntSubtract",
               "cnr_id": "basic_data_handling",
-              "ver": "1.0.0",
-              "Node name for S&R": "Basic data handling: IntSubtract"
+              "ver": "1.0.0"
             },
             "widgets_values": [
               0,
@@ -16913,9 +16893,9 @@
               }
             ],
             "properties": {
+              "Node name for S&R": "ColorMatch",
               "cnr_id": "comfyui-kjnodes",
-              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3",
-              "Node name for S&R": "ColorMatch"
+              "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
             },
             "widgets_values": [
               "mkl",
@@ -17006,10 +16986,10 @@
     "VHS_MetadataImage": false,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.49559007719769127,
+      "scale": 0.9657648580254617,
       "offset": [
-        6314.094142924736,
-        -3033.234159459779
+        4306.227477259745,
+        -3190.383156380517
       ]
     }
   },

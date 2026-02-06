@@ -1,8 +1,8 @@
 {
   "id": "4e2ce943-4931-48d4-bf8e-80dcded540d7",
   "revision": 0,
-  "last_node_id": 745,
-  "last_link_id": 1131,
+  "last_node_id": 751,
+  "last_link_id": 1156,
   "nodes": [
     {
       "id": 423,
@@ -252,7 +252,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 93,
+      "order": 91,
       "mode": 0,
       "inputs": [
         {
@@ -358,7 +358,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 94,
+      "order": 92,
       "mode": 0,
       "inputs": [
         {
@@ -474,7 +474,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 92,
+      "order": 94,
       "mode": 0,
       "inputs": [
         {
@@ -1111,7 +1111,9 @@
         {
           "name": "INT",
           "type": "INT",
-          "links": []
+          "links": [
+            1148
+          ]
         }
       ],
       "title": "Get_new_frames",
@@ -1136,7 +1138,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 101,
+      "order": 102,
       "mode": 0,
       "inputs": [
         {
@@ -1166,8 +1168,8 @@
       "id": 665,
       "type": "SetNode",
       "pos": [
-        -2750,
-        3590
+        -2680,
+        3640
       ],
       "size": [
         210,
@@ -1206,8 +1208,8 @@
       "id": 422,
       "type": "SetNode",
       "pos": [
-        -2750,
-        3670
+        -2680,
+        3720
       ],
       "size": [
         210,
@@ -1246,8 +1248,8 @@
       "id": 658,
       "type": "SetNode",
       "pos": [
-        -3410,
-        3570
+        -3420,
+        3700
       ],
       "size": [
         210,
@@ -1262,7 +1264,7 @@
         {
           "name": "STRING",
           "type": "STRING",
-          "link": 1127
+          "link": 1141
         }
       ],
       "outputs": [
@@ -1284,8 +1286,8 @@
       "id": 664,
       "type": "VHS_VideoInfoLoaded",
       "pos": [
-        -2930,
-        3630
+        -2860,
+        3680
       ],
       "size": [
         190.66666412353516,
@@ -1350,8 +1352,8 @@
       "id": 421,
       "type": "SetNode",
       "pos": [
-        -2750,
-        3630
+        -2680,
+        3680
       ],
       "size": [
         210,
@@ -1409,7 +1411,7 @@
           "type": "STRING",
           "links": [
             343,
-            1122
+            1136
           ]
         }
       ],
@@ -1417,76 +1419,6 @@
       "properties": {},
       "widgets_values": [
         "input_path"
-      ]
-    },
-    {
-      "id": 682,
-      "type": "SetNode",
-      "pos": [
-        -3410,
-        3650
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 110,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "link": 1129
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_is_last",
-      "properties": {
-        "previousName": "is_last"
-      },
-      "widgets_values": [
-        "is_last"
-      ]
-    },
-    {
-      "id": 686,
-      "type": "GetNode",
-      "pos": [
-        -4230,
-        4190
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            1043
-          ]
-        }
-      ],
-      "title": "Get_is_last",
-      "properties": {},
-      "widgets_values": [
-        "is_last"
       ]
     },
     {
@@ -1503,7 +1435,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1537,7 +1469,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1558,46 +1490,6 @@
       "bgcolor": "#29699c"
     },
     {
-      "id": 676,
-      "type": "SetNode",
-      "pos": [
-        -3530,
-        4130
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 103,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "link": 1026
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_vace_frames",
-      "properties": {
-        "previousName": "vace_frames"
-      },
-      "widgets_values": [
-        "vace_frames"
-      ],
-      "color": "#1b4669",
-      "bgcolor": "#29699c"
-    },
-    {
       "id": 692,
       "type": "GetNode",
       "pos": [
@@ -1611,7 +1503,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1645,7 +1537,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1666,107 +1558,11 @@
       "bgcolor": "#3f5159"
     },
     {
-      "id": 661,
-      "type": "VHS_LoadVideoFFmpegPath",
-      "pos": [
-        -3190,
-        3540
-      ],
-      "size": [
-        220,
-        262
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 111,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "video",
-          "type": "STRING",
-          "widget": {
-            "name": "video"
-          },
-          "link": 1130
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1116
-          ]
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "links": []
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "links": []
-        },
-        {
-          "name": "video_info",
-          "type": "VHS_VIDEOINFO",
-          "links": [
-            986
-          ]
-        }
-      ],
-      "title": "Load First Video",
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
-      },
-      "widgets_values": {
-        "video": "",
-        "force_rate": 0,
-        "custom_width": 0,
-        "custom_height": 0,
-        "frame_load_cap": 0,
-        "start_time": 0,
-        "format": "Wan",
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "",
-            "type": "path",
-            "format": "video/",
-            "force_rate": 0,
-            "custom_width": 0,
-            "custom_height": 0,
-            "frame_load_cap": 0,
-            "start_time": 0
-          }
-        }
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 651,
       "type": "GetNode",
       "pos": [
-        -3980,
-        3770
+        -4040,
+        3850
       ],
       "size": [
         210,
@@ -1775,7 +1571,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1783,7 +1579,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            1123
+            1137
           ]
         }
       ],
@@ -1792,46 +1588,6 @@
       "widgets_values": [
         "project_name"
       ]
-    },
-    {
-      "id": 693,
-      "type": "SetNode",
-      "pos": [
-        -3530,
-        4210
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 105,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "link": 1049
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_clip3",
-      "properties": {
-        "previousName": "clip3"
-      },
-      "widgets_values": [
-        "clip3"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
     },
     {
       "id": 627,
@@ -1894,7 +1650,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -1960,40 +1716,6 @@
       ]
     },
     {
-      "id": 696,
-      "type": "GetNode",
-      "pos": [
-        -3020,
-        4960
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 28,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1052
-          ]
-        }
-      ],
-      "title": "Get_clip3",
-      "properties": {},
-      "widgets_values": [
-        "clip3"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 683,
       "type": "GetNode",
       "pos": [
@@ -2007,7 +1729,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 27,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2015,7 +1737,7 @@
           "name": "BOOLEAN",
           "type": "BOOLEAN",
           "links": [
-            1040
+            1155
           ]
         }
       ],
@@ -2024,40 +1746,6 @@
       "widgets_values": [
         "is_last"
       ]
-    },
-    {
-      "id": 695,
-      "type": "GetNode",
-      "pos": [
-        -3950,
-        4920
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 30,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1051
-          ]
-        }
-      ],
-      "title": "Get_clip1",
-      "properties": {},
-      "widgets_values": [
-        "clip1"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
     },
     {
       "id": 670,
@@ -2138,7 +1826,7 @@
           "name": "result",
           "type": "*",
           "links": [
-            1121
+            1135
           ]
         }
       ],
@@ -2172,7 +1860,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 28,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2180,7 +1868,7 @@
           "name": "BOOLEAN",
           "type": "BOOLEAN",
           "links": [
-            1042
+            1146
           ]
         }
       ],
@@ -2191,51 +1879,11 @@
       ]
     },
     {
-      "id": 689,
-      "type": "SetNode",
-      "pos": [
-        -2800,
-        3930
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 118,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "link": 1115
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_video2",
-      "properties": {
-        "previousName": "video2"
-      },
-      "widgets_values": [
-        "video2"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 690,
       "type": "SetNode",
       "pos": [
-        -2910,
-        3560
+        -2840,
+        3610
       ],
       "size": [
         210,
@@ -2269,30 +1917,6 @@
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159"
-    },
-    {
-      "id": 663,
-      "type": "MarkdownNote",
-      "pos": [
-        -2820,
-        3740
-      ],
-      "size": [
-        230,
-        90
-      ],
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Video Parameters",
-      "properties": {},
-      "widgets_values": [
-        "It is assumed that video1 and video2 have the same framerate, width and height.\n\nVideo will be generated and output with the same parameters as video1."
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
     },
     {
       "id": 697,
@@ -2401,7 +2025,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 33,
+      "order": 29,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2433,7 +2057,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 34,
+      "order": 30,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2594,7 +2218,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 31,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2615,209 +2239,6 @@
       "bgcolor": "#29699c"
     },
     {
-      "id": 671,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        -2880,
-        4930
-      ],
-      "size": [
-        220,
-        454
-      ],
-      "flags": {},
-      "order": 100,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1052
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 1056
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": 1009
-        },
-        {
-          "name": "save_output",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "save_output"
-          },
-          "link": 1040
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": []
-        }
-      ],
-      "title": "Clip3 Lossless Save",
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
-      },
-      "widgets_values": {
-        "frame_rate": 16,
-        "loop_count": 0,
-        "filename_prefix": "",
-        "format": "video/ffv1-mkv",
-        "level": "3",
-        "coder": "1",
-        "context": "1",
-        "gop_size": 1,
-        "slices": "16",
-        "slicecrc": "1",
-        "pix_fmt": "yuv444p",
-        "save_metadata": false,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": true,
-          "paused": false,
-          "params": {
-            "filename": "index004_clip3_00001.mkv",
-            "subfolder": "spaceship\\vace-work",
-            "type": "output",
-            "format": "video/ffv1-mkv",
-            "frame_rate": 16,
-            "workflow": "index004_clip3_00001.png",
-            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index004_clip3_00001.mkv"
-          }
-        }
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 662,
-      "type": "VHS_LoadVideoFFmpegPath",
-      "pos": [
-        -3080,
-        3900
-      ],
-      "size": [
-        220,
-        262
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 112,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "video",
-          "type": "STRING",
-          "widget": {
-            "name": "video"
-          },
-          "link": 1131
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1115
-          ]
-        },
-        {
-          "name": "mask",
-          "type": "MASK",
-          "links": []
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "links": []
-        },
-        {
-          "name": "video_info",
-          "type": "VHS_VIDEOINFO",
-          "links": []
-        }
-      ],
-      "title": "Load Second Video",
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
-      },
-      "widgets_values": {
-        "video": "",
-        "force_rate": 0,
-        "custom_width": 0,
-        "custom_height": 0,
-        "frame_load_cap": 0,
-        "start_time": 0,
-        "format": "Wan",
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "",
-            "type": "path",
-            "format": "video/",
-            "force_rate": 0,
-            "custom_width": 0,
-            "custom_height": 0,
-            "frame_load_cap": 0,
-            "start_time": 0
-          }
-        }
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 708,
       "type": "VAELoader",
       "pos": [
@@ -2829,7 +2250,7 @@
         58
       ],
       "flags": {},
-      "order": 36,
+      "order": 32,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2864,7 +2285,7 @@
         360
       ],
       "flags": {},
-      "order": 37,
+      "order": 33,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2890,7 +2311,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 106,
+      "order": 101,
       "mode": 0,
       "inputs": [
         {
@@ -2928,7 +2349,7 @@
         100
       ],
       "flags": {},
-      "order": 38,
+      "order": 34,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -2952,7 +2373,7 @@
         838.375
       ],
       "flags": {},
-      "order": 90,
+      "order": 89,
       "mode": 0,
       "inputs": [
         {
@@ -3147,6 +2568,10 @@
           [
             "320",
             "strength_model"
+          ],
+          [
+            "-1",
+            "vhslatentpreview"
           ]
         ],
         "cnr_id": "comfy-core",
@@ -3181,7 +2606,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 35,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3213,7 +2638,7 @@
         380
       ],
       "flags": {},
-      "order": 40,
+      "order": 36,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -3224,6 +2649,2840 @@
       ],
       "color": "#146e47",
       "bgcolor": "#005a33"
+    },
+    {
+      "id": 15,
+      "type": "PrimitiveString",
+      "pos": [
+        -6500,
+        4120
+      ],
+      "size": [
+        320,
+        58
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "title": "Input Path",
+      "properties": {
+        "Node name for S&R": "InputPath",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59"
+      },
+      "widgets_values": [
+        "F:\\comfyui-workdirs\\output\\spaceship\\raw"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 13,
+      "type": "PrimitiveString",
+      "pos": [
+        -6500,
+        4220
+      ],
+      "size": [
+        320,
+        58
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "title": "Project Name",
+      "properties": {
+        "Node name for S&R": "ProjectName",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59"
+      },
+      "widgets_values": [
+        "spaceship"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 716,
+      "type": "GetNode",
+      "pos": [
+        -4040,
+        3930
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1139
+          ]
+        }
+      ],
+      "title": "Get_debug",
+      "properties": {},
+      "widgets_values": [
+        "debug"
+      ]
+    },
+    {
+      "id": 719,
+      "type": "SetNode",
+      "pos": [
+        -2860,
+        4860
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 121,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 1094
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_clip2_filename",
+      "properties": {
+        "previousName": "clip2_filename"
+      },
+      "widgets_values": [
+        "clip2_filename"
+      ]
+    },
+    {
+      "id": 583,
+      "type": "GetNode",
+      "pos": [
+        -4250,
+        6080
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 40,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            864,
+            865
+          ]
+        }
+      ],
+      "title": "Get_clip2_filename",
+      "properties": {},
+      "widgets_values": [
+        "clip2_filename"
+      ]
+    },
+    {
+      "id": 582,
+      "type": "StringReplace",
+      "pos": [
+        -4060,
+        6040
+      ],
+      "size": [
+        210,
+        196
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 83,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "widget": {
+            "name": "string"
+          },
+          "link": 864
+        },
+        {
+          "name": "find",
+          "type": "STRING",
+          "widget": {
+            "name": "find"
+          },
+          "link": 865
+        },
+        {
+          "name": "replace",
+          "type": "STRING",
+          "widget": {
+            "name": "replace"
+          },
+          "link": 866
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            867
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringReplace",
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 572,
+      "type": "Basic data handling: PathOutputDir",
+      "pos": [
+        -4250,
+        6040
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 41,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "output_path",
+          "type": "STRING",
+          "links": [
+            866
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Basic data handling: PathOutputDir",
+        "cnr_id": "basic_data_handling",
+        "ver": "1.0.0"
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 498,
+      "type": "StringConcatenate",
+      "pos": [
+        -4110,
+        5960
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 97,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 867
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 718
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            860
+          ]
+        }
+      ],
+      "title": "output / work_dir",
+      "properties": {
+        "Node name for S&R": "StringConcatenate",
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [
+        "output",
+        "",
+        "/"
+      ]
+    },
+    {
+      "id": 578,
+      "type": "GetNode",
+      "pos": [
+        -4120,
+        5880
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 42,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1156
+          ]
+        }
+      ],
+      "title": "Get_is_last",
+      "properties": {},
+      "widgets_values": [
+        "is_last"
+      ]
+    },
+    {
+      "id": 720,
+      "type": "MarkdownNote",
+      "pos": [
+        -4180,
+        6130
+      ],
+      "size": [
+        260,
+        110
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Final Assembly Dependencies",
+      "properties": {},
+      "widgets_values": [
+        "This mess ensures the final join operation doesn't run until `is_last=True` and `clip2_filename` has a value. Writing out clip2 is the last thing we do in an iteration so it's a reliable indicator that the iteration is complete."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 503,
+      "type": "GetNode",
+      "pos": [
+        -3490,
+        6000
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 44,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            693,
+            694
+          ]
+        }
+      ],
+      "title": "Get_project_name",
+      "properties": {},
+      "widgets_values": [
+        "project_name"
+      ]
+    },
+    {
+      "id": 718,
+      "type": "VHS_SelectFilename",
+      "pos": [
+        -3100,
+        4860
+      ],
+      "size": [
+        224.3333282470703,
+        58
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 115,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "filenames",
+          "type": "VHS_FILENAMES",
+          "link": 1093
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filename",
+          "type": "STRING",
+          "links": [
+            1094
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_SelectFilename",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "1.7.9"
+      },
+      "widgets_values": {
+        "index": -1
+      }
+    },
+    {
+      "id": 502,
+      "type": "StringConcatenate",
+      "pos": [
+        -3280,
+        6000
+      ],
+      "size": [
+        210,
+        166
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 84,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 693
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 694
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            695
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "StringConcatenate",
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "/"
+      ]
+    },
+    {
+      "id": 500,
+      "type": "GetNode",
+      "pos": [
+        -3280,
+        5950
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 45,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            691
+          ]
+        }
+      ],
+      "title": "Get_fps",
+      "properties": {},
+      "widgets_values": [
+        "fps"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 497,
+      "type": "GetNode",
+      "pos": [
+        -4270,
+        5960
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 46,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            718
+          ]
+        }
+      ],
+      "title": "Get_work_dir",
+      "properties": {},
+      "widgets_values": [
+        "work_dir"
+      ]
+    },
+    {
+      "id": 723,
+      "type": "SetNode",
+      "pos": [
+        -3420,
+        3660
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 107,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "link": 1140
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_work_dir",
+      "properties": {
+        "previousName": "work_dir"
+      },
+      "widgets_values": [
+        "work_dir"
+      ]
+    },
+    {
+      "id": 568,
+      "type": "MarkdownNote",
+      "pos": [
+        -5000,
+        4120
+      ],
+      "size": [
+        450,
+        180
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Cross Fade",
+      "properties": {},
+      "widgets_values": [
+        "# Cross Fade\n### The context frames at the start and end of the VACE generation are cross-faded over the original frames.\n- This helps to mute the color/brightness shift that VACE can introduce.\n- Since context frames in the original videos and the VACE generation are identical except for the color/brightness shift we are addressing, there is no danger of the cross fade introducing ghosting or blur.\n- To disable cross fade, open the **Cross Fade Contexts** subgraph and set *start_level* and *end_level* both to 1.00 on the two Cross Fade nodes."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 715,
+      "type": "SetNode",
+      "pos": [
+        -5420,
+        4250
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 90,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "link": 1090
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_debug",
+      "properties": {
+        "previousName": "debug"
+      },
+      "widgets_values": [
+        "debug"
+      ]
+    },
+    {
+      "id": 585,
+      "type": "VRAM_Debug",
+      "pos": [
+        -3820,
+        5850
+      ],
+      "size": [
+        310,
+        190
+      ],
+      "flags": {},
+      "order": 120,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_input",
+          "shape": 7,
+          "type": "*",
+          "link": 870
+        },
+        {
+          "name": "image_pass",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model_pass",
+          "shape": 7,
+          "type": "MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "any_output",
+          "type": "*",
+          "links": [
+            928
+          ]
+        },
+        {
+          "name": "image_pass",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "model_pass",
+          "type": "MODEL",
+          "links": null
+        },
+        {
+          "label": "14,367,956,030   freemem_before",
+          "name": "freemem_before",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "32,268,615,680      freemem_after",
+          "name": "freemem_after",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAM_Debug",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 725,
+      "type": "MarkdownNote",
+      "pos": [
+        -3770,
+        6090
+      ],
+      "size": [
+        230,
+        150
+      ],
+      "flags": {},
+      "order": 48,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "RAM management",
+      "properties": {},
+      "widgets_values": [
+        "Depending on how many clips you are joining, final video assembly can be very RAM (not VRAM) intensive.  \n\nClearing ComfyUI cahce and unloading models can free up system RAM as well as VRAM."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 726,
+      "type": "GetNode",
+      "pos": [
+        -3480,
+        5960
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 49,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1097
+          ]
+        }
+      ],
+      "title": "Get_debug",
+      "properties": {},
+      "widgets_values": [
+        "debug"
+      ]
+    },
+    {
+      "id": 366,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -3370,
+        4870
+      ],
+      "size": [
+        220,
+        454
+      ],
+      "flags": {},
+      "order": 99,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1054
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 1064
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 905
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": [
+            1093
+          ]
+        }
+      ],
+      "title": "Clip2 Lossless Save",
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "",
+        "format": "video/ffv1-mkv",
+        "level": "3",
+        "coder": "1",
+        "context": "1",
+        "gop_size": 1,
+        "slices": "16",
+        "slicecrc": "1",
+        "pix_fmt": "yuv444p",
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": true,
+          "paused": false,
+          "params": {
+            "filename": "index004_clip2_00001.mkv",
+            "subfolder": "spaceship\\vace-work",
+            "type": "output",
+            "format": "video/ffv1-mkv",
+            "frame_rate": 16,
+            "workflow": "index004_clip2_00001.png",
+            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index004_clip2_00001.mkv"
+          }
+        }
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 669,
+      "type": "GetNode",
+      "pos": [
+        -4220,
+        5010
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 50,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1006,
+            1065,
+            1067
+          ]
+        }
+      ],
+      "title": "Get_workfile_prefix",
+      "properties": {},
+      "widgets_values": [
+        "workfile_prefix"
+      ]
+    },
+    {
+      "id": 370,
+      "type": "GetNode",
+      "pos": [
+        -4220,
+        4960
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 51,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            1055,
+            1056,
+            1064
+          ]
+        }
+      ],
+      "title": "Get_fps",
+      "properties": {},
+      "widgets_values": [
+        "fps"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 687,
+      "type": "MarkdownNote",
+      "pos": [
+        -3680,
+        5410
+      ],
+      "size": [
+        470,
+        270
+      ],
+      "flags": {},
+      "order": 52,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Clip Files",
+      "properties": {},
+      "widgets_values": [
+        "- **clip1** - Frames from the current video that come *before* the transition region\n- **clip2** - VACE-generated transition frames between the current video and the next video  \n- **clip3** - Frames from the final video that come *after* the last transition region\n\n**clip3 only exists for the final iteration**\n\nEach video appears in two iterations - once as video_2 (the \"next\" video) and once as video_1 (the \"current\" video). The frames after each transition get saved when that video becomes video_1 in the next iteration. \n\nThe final video is the exception: it only appears as video_2 in the last iteration, so there's no \"next iteration\" to save its ending frames. That's why we save clip3 during the last iteration - to capture the ending of the final video.\n\n**Example with 3 videos:**\n- Iteration 0: video1→video2 → saves clip1 (video1 start) + clip2 (transition)\n- Iteration 1: video2→video3 → saves clip1 (video2 middle) + clip2 (transition) + clip3 (video3 end)"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 721,
+      "type": "MarkdownNote",
+      "pos": [
+        -2870,
+        5850
+      ],
+      "size": [
+        350,
+        130
+      ],
+      "flags": {},
+      "order": 53,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Rerunning the Join step",
+      "properties": {},
+      "widgets_values": [
+        "# If the Join step fails\nUse *Load Videos From Folder (Simple)* and *Video Combine* nodes to manually combine clips from the `project_name/vace-work` directory if you need to rerun this step.\n"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 595,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        -5000,
+        4020
+      ],
+      "size": [
+        270,
+        60
+      ],
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "enable_cross_fade",
+          "name": "value",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            876
+          ]
+        }
+      ],
+      "title": "Post-Processing: Cross Fade",
+      "properties": {
+        "Node name for S&R": "PrimitiveBoolean",
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 499,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -3110,
+        5790
+      ],
+      "size": [
+        220.75,
+        334
+      ],
+      "flags": {},
+      "order": 127,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 929
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 691
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 695
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
+      },
+      "widgets_values": {
+        "frame_rate": 8,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "spaceship_00001.mp4",
+            "subfolder": "spaceship",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "spaceship_00001.png",
+            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\spaceship_00001.mp4"
+          }
+        }
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 411,
+      "type": "SetNode",
+      "pos": [
+        -3530,
+        4090
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 103,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "link": 1025
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_control_mask",
+      "properties": {
+        "previousName": "control_mask"
+      },
+      "widgets_values": [
+        "control_mask"
+      ],
+      "color": "#1c5715",
+      "bgcolor": "#1f401b"
+    },
+    {
+      "id": 717,
+      "type": "GetNode",
+      "pos": [
+        -4230,
+        4350
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 55,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1092
+          ]
+        }
+      ],
+      "title": "Get_debug",
+      "properties": {},
+      "widgets_values": [
+        "debug"
+      ]
+    },
+    {
+      "id": 705,
+      "type": "UNETLoader",
+      "pos": [
+        -6490,
+        4400
+      ],
+      "size": [
+        420,
+        90
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1072
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.12.2"
+      },
+      "widgets_values": [
+        "WAN 2.2\\Fun\\wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 706,
+      "type": "UNETLoader",
+      "pos": [
+        -6490,
+        4530
+      ],
+      "size": [
+        420,
+        90
+      ],
+      "flags": {},
+      "order": 57,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1073
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.12.2"
+      },
+      "widgets_values": [
+        "WAN 2.2\\Fun\\wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 707,
+      "type": "CLIPLoader",
+      "pos": [
+        -6490,
+        4660
+      ],
+      "size": [
+        420,
+        110
+      ],
+      "flags": {},
+      "order": 58,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            1074
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.12.2"
+      },
+      "widgets_values": [
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 713,
+      "type": "PrimitiveBoolean",
+      "pos": [
+        -5690,
+        4220
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 59,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1090
+          ]
+        }
+      ],
+      "title": "Enable Debug",
+      "properties": {
+        "Node name for S&R": "PrimitiveBoolean",
+        "cnr_id": "comfy-core",
+        "ver": "0.12.2"
+      },
+      "widgets_values": [
+        true
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 567,
+      "type": "MarkdownNote",
+      "pos": [
+        -6940,
+        3500
+      ],
+      "size": [
+        390,
+        440
+      ],
+      "flags": {},
+      "order": 60,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Workflow Parameters",
+      "properties": {},
+      "widgets_values": [
+        "# Parameters\n\nParameter |Description \n-|-\nInput Path | The location of your input files.\nProject Name | Output files will be placed in a directory with this name in your ComfyUI output directory. `ComfyUI/output/MyProject`\nContext Frames | The number of frames on either side of the transition that VACE will use as references for frame interpolation. 8 is a good value to start with.\nReplace Frames | The number of frames to regenerate on each side of the stitch. e.g. If set to 8, then VACE will generate 16 frames; 8 frames at the end of the first video and 8 frames at the start of the second video. This is the number of frames that will be *overwritten* by newly generated frames. Start small, 4 or 8 frames and adjust upward until you like the result.\nNew Frames | The number of additional frames to generate in addition to `Replace Frames`. Effectively extending the videos from the middle. If you have a reason to set `Replace Frames` to zero, then you'll want to add some frames here.\nPrompts | Prompts are optional here. The model is primarily guided by the motion cues in the context frames.\nDebug | Setting `Debug=True` will enable console logging of various parameters as the workflow run. If you want a little more progress feedback than the number of queued jobs remaining, this is a good way to get it.\n"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 566,
+      "type": "MarkdownNote",
+      "pos": [
+        -7040,
+        3990
+      ],
+      "size": [
+        510,
+        970
+      ],
+      "flags": {},
+      "order": 61,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "How To Use This Workflow",
+      "properties": {},
+      "widgets_values": [
+        "\n\n# How to Use This Workflow\n## The purpose of this workflow is to generate transition frames between two or more input videos.\n### This smooths out sudden motion shifts between clips and replaces noisy frames that sometimes appear at clip endings.\n\n---\n## IMPORTANT: Before running this workflow, you must configure it for your system. What works for my system probably doesn't work for yours. Please read the green notes for guidance.\n\nFor initial setup and run, you should only need to interact with the two nearby groups, ***Configuration*** and ***Model Load and Inference***.\n\n---\n\n### 1. Select models appropriate for your system\nSelect your VACE models. Choose models that match what you usually run in your normal Wan workflow. If you usually run FP8 for video generation, choose FP8 VACE models. If you usually use Q4 GGUF, use Q4 GGUF VACE models.\n\n### 2. Configure the KSamplers and Optimizations\nIn the Sampler subgraph, toggle common optimizations to suit your environment. As with the model choice, try to match the sampler settings and optimizations that you normally use for Wan generation. \n\n### 3. Clean up from previous runs\n- **Set the index parameter to 0.** `index` counts your input files, starting from 0. Each time you run the workflow, `index` is incremented, allowing the workflow to load the next set of inputs. If you forget to reset `index` to 0, the generations won't begin with the first video in your input directory.  \nIf the value of `index` is greater than the number of videos in your input directory, you'll see an error like *\"sequence item 1: expected str instance, NoneType found.\"* Learn to recognize this as a reminder to reset `index` to 0.\n- **Clear ComfyUI's run cache.** It's important to clear the execution cache between runs if you have run the workflow fully or partially already. Failure to do this will cause ComfyUI to skip steps that it has cached. Go to *C -> Edit -> Unload Models and Execution Cache*. You may also have a button next to **Manager** on your top button bar that does this.\n- **Delete or rename existing `vace-work` directory**. If you're re-running, don't leave previous work files in your project directory or they'll be included in your final video.\n\n### 4. Prepare inputs\nYour input videos should be placed in an empty directory and named such that they'll sort in the order they're meant to be viewed. e.g. `video01.mp4`, `video02.mp4`, etc. *Use zero-padding in your file names to avoid issues from lexical sorting.* If your files are named `video1.mp4`, `video9.mp4`, `video10.mp4`, they'll get sorted to `video1.mp4`, `video10.mp4`, `video9.mp4`, which is probably not what you want. Naming them `video01.mp4`, `video09.mp4`, `video10.mp4` will force correct sort order.\n\n### 5. Set the workflow parameters\nSee above for details on parameters.\n\n### 6. Run the workflow once for every pair of videos to be joined\nSet the batch count to one less than your total number of input videos, and click Run.\n\n- Work files from the run will be created in `ComfyUI/output/[project-directory]/vace-work`. You may safely delete the work directory after a successful run.\n- After frame generation completes, the final output video will be stitched together and placed in your specified project directory, `ComfyUI/output/[project-directory]`.\n\n"
+      ],
+      "color": "#146e47",
+      "bgcolor": "#005a33"
+    },
+    {
+      "id": 14,
+      "type": "mxSlider",
+      "pos": [
+        -6500,
+        3910
+      ],
+      "size": [
+        320,
+        30
+      ],
+      "flags": {},
+      "order": 62,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "INT",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "title": "Replace Frames",
+      "properties": {
+        "Node name for S&R": "mxSlider",
+        "value": 8,
+        "min": 0,
+        "max": 40,
+        "step": 4,
+        "decimals": 0,
+        "snap": true,
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "0.9.92"
+      },
+      "widgets_values": [
+        8,
+        8,
+        0
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 704,
+      "type": "PrimitiveInt",
+      "pos": [
+        -5680,
+        3560
+      ],
+      "size": [
+        210,
+        82
+      ],
+      "flags": {},
+      "order": 63,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1071
+          ]
+        }
+      ],
+      "title": "Seed",
+      "properties": {
+        "Node name for S&R": "PrimitiveInt",
+        "cnr_id": "comfy-core",
+        "ver": "0.12.2"
+      },
+      "widgets_values": [
+        623845695270953,
+        "randomize"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 569,
+      "type": "MarkdownNote",
+      "pos": [
+        -5680,
+        3060
+      ],
+      "size": [
+        480,
+        390
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 64,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model links",
+      "properties": {},
+      "widgets_values": [
+        "# VACE Model download links\n\nYou need one of the VACE variants below to run this workflow. Choose the model format and quantization that most closely matches what you run for your regular Wan workflow.\n\n**Wan 2.2 Fun VACE**\n  - [bf16 and fp8](https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/diffusion_models)\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.2-VACE-Fun-A14B-GGUF/tree/main)\n\n**Wan 2.1 VACE**\n\n  - [fp16](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/diffusion_models/wan2.1_vace_14B_fp16.safetensors)\n\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/tree/main)\n\n**Kijai’s extracted Fun Vace 2.2 modules, for loading along with standard T2V models. [Native use examples here.](https://huggingface.co/Kijai/WanVideo_comfy/discussions/81)**\n\n  - [bf16](https://huggingface.co/Kijai/WanVideo_comfy/tree/main/Fun/VACE)\n  - [GGUF](https://huggingface.co/Kijai/WanVideo_comfy_GGUF/tree/main/VACE)\n\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   └── 📂 diffusion_models/\n│   │      ├── wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors\n│   │      └── wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors\n```\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 593,
+      "type": "MarkdownNote",
+      "pos": [
+        -6190,
+        3060
+      ],
+      "size": [
+        490,
+        390
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) \n\n- **v2.3** - This release prioritizes workflow reliability and maintainability. Core functionality remains unchanged. These changes reduce surface area for failures and improve debuggability. Stability and deterministic operation take priority over convenience features.\n\n  - **Looping workflow discontinued** – While still functional, the loop-based approach obscured workflow status and complicated targeted reruns for specific transitions. The batch workflow provides better visibility and control.\n  - **Reverted to lossless fv1 intermediate files** – The 16-bit PNG experiment provided no practical benefit and made addressing individual joins more cumbersome. Returning to the proven method.\n  - **New custom nodes for cleaner workflows** – *WAN VACE Prep Batch* and *VACE Batch Context* encapsulate operations that are awkward to express in visual nodes but straightforward in Python. *Load Videos From Folder (simple)* replaces the KJNodes equivalent to eliminate problematic VideoHelperSuite dependencies that fail in some environments.\n  - **Enhanced console logging** – Additional diagnostic output when `Debug=True` to aid troubleshooting.\n  - **Fewer custom node dependencies** \n\n- **v2.2** - *Complexity Reduction Release*\n  - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.\n  - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers with this workflow, but it's up to you to bring them and set them up.\n  - Custom node dependencies reduced.\n  - Un-subgraphed some functions. Sadly, this powerful and useful feature is still too unstable to distribute to users on varying versions of ComfyUI.\n- **v2.1**\n  - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output  \n- **v2.0**\n  - Workflow redesign. Core functionality is the same, but hopefully usability is improved\n  - (Experimental) Added cross fade at VACE boundaries to mitigate brightness/color shift\n  - (Experimental) Added color match for VACE frames to mitigate brightness/color shift\n  - Save intermediate work as 16 bit png instead of ffv1\n  - Integrated video join into the main workflow. No more need to run the join part separately.\n  - Excessive documentation\n  - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. \n  - Inputs and outputs are logged to the console for better progress tracking\n\n- **v1.3**\n  - removed lingering custom primitive node\n\n- **v1.2**\n  - Sort the input directory list.  \n\n- **v1.1**\n  - Preserve input framerate in workflow VACE outputs. Previously, all output was forced to 16fps. Note, you must manually set the framerate in the Join & Save output.  \n  - Changed default model/sampler to Wan 2.2 Fun VACE fp8/KSampler. GGUF, MoE, 2.1 are still available in the bypassed subgraphs.\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 494,
+      "type": "5b803fdb-e065-4df0-9485-4b7bd5a4879e",
+      "pos": [
+        -3120,
+        4570
+      ],
+      "size": [
+        210,
+        70
+      ],
+      "flags": {},
+      "order": 113,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "control_video",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1113
+        },
+        {
+          "label": "context_frames",
+          "name": "num_frames",
+          "type": "INT",
+          "link": 885
+        },
+        {
+          "label": "vace_output",
+          "name": "images_1",
+          "type": "IMAGE",
+          "link": 880
+        }
+      ],
+      "outputs": [
+        {
+          "label": "vace_final",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            882
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [],
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 746,
+      "type": "WanVACEBatchContext",
+      "pos": [
+        -3780,
+        3690
+      ],
+      "size": [
+        270,
+        230
+      ],
+      "flags": {},
+      "order": 95,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_list",
+          "type": "STRING",
+          "link": 1135
+        },
+        {
+          "name": "input_dir",
+          "type": "STRING",
+          "widget": {
+            "name": "input_dir"
+          },
+          "link": 1136
+        },
+        {
+          "name": "project_name",
+          "type": "STRING",
+          "widget": {
+            "name": "project_name"
+          },
+          "link": 1137
+        },
+        {
+          "name": "index",
+          "type": "INT",
+          "widget": {
+            "name": "index"
+          },
+          "link": 1138
+        },
+        {
+          "name": "debug",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "debug"
+          },
+          "link": 1139
+        }
+      ],
+      "outputs": [
+        {
+          "name": "work_dir",
+          "type": "STRING",
+          "links": [
+            1140
+          ]
+        },
+        {
+          "name": "workfile_prefix",
+          "type": "STRING",
+          "links": [
+            1141
+          ]
+        },
+        {
+          "name": "video_1_filename",
+          "type": "STRING",
+          "links": [
+            1142
+          ]
+        },
+        {
+          "name": "video_2_filename",
+          "type": "STRING",
+          "links": [
+            1143
+          ]
+        },
+        {
+          "name": "is_first",
+          "type": "BOOLEAN",
+          "links": [
+            1144
+          ]
+        },
+        {
+          "name": "is_last",
+          "type": "BOOLEAN",
+          "links": [
+            1145
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WanVACEBatchContext"
+      },
+      "widgets_values": [
+        "",
+        ".",
+        0,
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 652,
+      "type": "GetNode",
+      "pos": [
+        -4040,
+        3890
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 66,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1138
+          ]
+        }
+      ],
+      "title": "Get_index",
+      "properties": {},
+      "widgets_values": [
+        "index"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 747,
+      "type": "SetNode",
+      "pos": [
+        -3470,
+        3890
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 111,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "link": 1144
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_is_first",
+      "properties": {
+        "previousName": "is_first"
+      },
+      "widgets_values": [
+        "is_first"
+      ]
+    },
+    {
+      "id": 661,
+      "type": "VHS_LoadVideoFFmpegPath",
+      "pos": [
+        -3120,
+        3590
+      ],
+      "size": [
+        220,
+        262
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 109,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "video",
+          "type": "STRING",
+          "widget": {
+            "name": "video"
+          },
+          "link": 1142
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1116
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": []
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": []
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": [
+            986
+          ]
+        }
+      ],
+      "title": "Load First Video",
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
+      },
+      "widgets_values": {
+        "video": "",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "start_time": 0,
+        "format": "Wan",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "",
+            "type": "path",
+            "format": "video/",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "start_time": 0
+          }
+        }
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 662,
+      "type": "VHS_LoadVideoFFmpegPath",
+      "pos": [
+        -3110,
+        3900
+      ],
+      "size": [
+        220,
+        262
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 110,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "video",
+          "type": "STRING",
+          "widget": {
+            "name": "video"
+          },
+          "link": 1143
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1115
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": []
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": []
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": []
+        }
+      ],
+      "title": "Load Second Video",
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideoFFmpegPath",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "0edce8ef7ce173ac97a3ed3d6f4636029d1a4530"
+      },
+      "widgets_values": {
+        "video": "",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "start_time": 0,
+        "format": "Wan",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "",
+            "type": "path",
+            "format": "video/",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "start_time": 0
+          }
+        }
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 663,
+      "type": "MarkdownNote",
+      "pos": [
+        -2760,
+        3770
+      ],
+      "size": [
+        230,
+        90
+      ],
+      "flags": {},
+      "order": 67,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Video Parameters",
+      "properties": {},
+      "widgets_values": [
+        "It is assumed that video1 and video2 have the same framerate, width and height.\n\nVideo will be generated and output with the same parameters as video1."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 689,
+      "type": "SetNode",
+      "pos": [
+        -2830,
+        3930
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 118,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 1115
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_video2",
+      "properties": {
+        "previousName": "video2"
+      },
+      "widgets_values": [
+        "video2"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 748,
+      "type": "SetNode",
+      "pos": [
+        -3470,
+        3930
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 112,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "link": 1145
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_is_last",
+      "properties": {
+        "previousName": "is_last"
+      },
+      "widgets_values": [
+        "is_last"
+      ]
+    },
+    {
+      "id": 686,
+      "type": "GetNode",
+      "pos": [
+        -4230,
+        4190
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 68,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": [
+            1147
+          ]
+        }
+      ],
+      "title": "Get_is_last",
+      "properties": {},
+      "widgets_values": [
+        "is_last"
+      ]
+    },
+    {
+      "id": 738,
+      "type": "MarkdownNote",
+      "pos": [
+        -3590,
+        4270
+      ],
+      "size": [
+        340,
+        150
+      ],
+      "flags": {},
+      "order": 69,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Frame Math",
+      "properties": {},
+      "widgets_values": [
+        "\nThis workflow will generate \n```\n(Context Frames * 2) + (Replace Frames * 2) + New Frames + 1\n```\n total frames. (The +1 is to meet the Wan's preference for generating 4n+1 frames at a time. If we don't precisely hit that, the model will quietly round down our requested number of frames to the nearest 4n+1.)\nThe same rules apply here as with regular Wan generations, so 81 total frames is still the sweet spot. "
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 676,
+      "type": "SetNode",
+      "pos": [
+        -3530,
+        4130
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 104,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "link": 1149
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_vace_frames",
+      "properties": {
+        "previousName": "vace_frames"
+      },
+      "widgets_values": [
+        "vace_frames"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 750,
+      "type": "SetNode",
+      "pos": [
+        -3530,
+        4170
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 105,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 1151
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_clip1",
+      "properties": {
+        "previousName": "clip1"
+      },
+      "widgets_values": [
+        "clip1"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 751,
+      "type": "SetNode",
+      "pos": [
+        -3530,
+        4210
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 106,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 1152
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_clip3",
+      "properties": {
+        "previousName": "clip3"
+      },
+      "widgets_values": [
+        "clip3"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 696,
+      "type": "GetNode",
+      "pos": [
+        -3020,
+        4960
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 70,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1153
+          ]
+        }
+      ],
+      "title": "Get_clip3",
+      "properties": {},
+      "widgets_values": [
+        "clip3"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 667,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -3810,
+        4890
+      ],
+      "size": [
+        220,
+        454
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 98,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1154
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 1055
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 1007
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": []
+        }
+      ],
+      "title": "Clip1 Lossless Save",
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "",
+        "format": "video/ffv1-mkv",
+        "level": "3",
+        "coder": "1",
+        "context": "1",
+        "gop_size": 1,
+        "slices": "16",
+        "slicecrc": "1",
+        "pix_fmt": "yuv444p",
+        "save_metadata": false,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": true,
+          "paused": false,
+          "params": {
+            "filename": "index004_clip1_00001.mkv",
+            "subfolder": "spaceship\\vace-work",
+            "type": "output",
+            "format": "video/ffv1-mkv",
+            "frame_rate": 16,
+            "workflow": "index004_clip1_00001.png",
+            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index004_clip1_00001.mkv"
+          }
+        }
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 695,
+      "type": "GetNode",
+      "pos": [
+        -3960,
+        4920
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 71,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1154
+          ]
+        }
+      ],
+      "title": "Get_clip1",
+      "properties": {},
+      "widgets_values": [
+        "clip1"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 671,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        -2880,
+        4930
+      ],
+      "size": [
+        220,
+        454
+      ],
+      "flags": {},
+      "order": 100,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1153
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_rate",
+          "type": "FLOAT",
+          "widget": {
+            "name": "frame_rate"
+          },
+          "link": 1056
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 1009
+        },
+        {
+          "name": "save_output",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "save_output"
+          },
+          "link": 1155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": []
+        }
+      ],
+      "title": "Clip3 Lossless Save",
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "",
+        "format": "video/ffv1-mkv",
+        "level": "3",
+        "coder": "1",
+        "context": "1",
+        "gop_size": 1,
+        "slices": "16",
+        "slicecrc": "1",
+        "pix_fmt": "yuv444p",
+        "save_metadata": false,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": true,
+          "paused": false,
+          "params": {
+            "filename": "index004_clip3_00001.mkv",
+            "subfolder": "spaceship\\vace-work",
+            "type": "output",
+            "format": "video/ffv1-mkv",
+            "frame_rate": 16,
+            "workflow": "index004_clip3_00001.png",
+            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index004_clip3_00001.mkv"
+          }
+        }
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 577,
+      "type": "Basic data handling: FlowSelect",
+      "pos": [
+        -3970,
+        5880
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 114,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 860
+        },
+        {
+          "name": "select",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "select"
+          },
+          "link": 1156
+        }
+      ],
+      "outputs": [
+        {
+          "name": "true",
+          "type": "*",
+          "links": [
+            870
+          ]
+        },
+        {
+          "name": "false",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Basic data handling: FlowSelect",
+        "cnr_id": "basic_data_handling",
+        "ver": "1.0.0"
+      },
+      "widgets_values": [
+        false
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 646,
+      "type": "LoadVideosFromFolderSimple",
+      "pos": [
+        -3450,
+        5810
+      ],
+      "size": [
+        290,
+        82
+      ],
+      "flags": {},
+      "order": 126,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_path"
+          },
+          "link": 928
+        },
+        {
+          "name": "debug",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "debug"
+          },
+          "link": 1097
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            929
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideosFromFolderSimple",
+        "cnr_id": "comfyui-wan-vace-prep",
+        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
+      },
+      "widgets_values": [
+        "",
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 674,
+      "type": "WanVACEPrepBatch",
+      "pos": [
+        -3910,
+        4050
+      ],
+      "size": [
+        240,
+        300
+      ],
+      "flags": {},
+      "order": 93,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_1",
+          "type": "IMAGE",
+          "link": 1047
+        },
+        {
+          "name": "video_2",
+          "type": "IMAGE",
+          "link": 1048
+        },
+        {
+          "name": "is_first",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "is_first"
+          },
+          "link": 1146
+        },
+        {
+          "name": "is_last",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "is_last"
+          },
+          "link": 1147
+        },
+        {
+          "name": "context_frames",
+          "type": "INT",
+          "widget": {
+            "name": "context_frames"
+          },
+          "link": 1021
+        },
+        {
+          "name": "replace_frames",
+          "type": "INT",
+          "widget": {
+            "name": "replace_frames"
+          },
+          "link": 1022
+        },
+        {
+          "name": "new_frames",
+          "type": "INT",
+          "widget": {
+            "name": "new_frames"
+          },
+          "link": 1148
+        },
+        {
+          "name": "debug",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "debug"
+          },
+          "link": 1092
+        }
+      ],
+      "outputs": [
+        {
+          "name": "control_video",
+          "type": "IMAGE",
+          "links": [
+            1117
+          ]
+        },
+        {
+          "name": "control_mask",
+          "type": "MASK",
+          "links": [
+            1025
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "links": [
+            1149
+          ]
+        },
+        {
+          "name": "start_images",
+          "type": "IMAGE",
+          "links": [
+            1151
+          ]
+        },
+        {
+          "name": "end_images",
+          "type": "IMAGE",
+          "links": [
+            1152
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WanVACEPrepBatch",
+        "cnr_id": "comfyui-wan-vace-prep",
+        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
+      },
+      "widgets_values": [
+        false,
+        false,
+        8,
+        8,
+        0,
+        true
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 573,
+      "type": "PrimitiveInt",
+      "pos": [
+        -5680,
+        3830
+      ],
+      "size": [
+        240,
+        100
+      ],
+      "flags": {},
+      "order": 72,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            868
+          ]
+        }
+      ],
+      "title": "Index",
+      "properties": {
+        "Node name for S&R": "PrimitiveInt",
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0"
+      },
+      "widgets_values": [
+        0,
+        "increment"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
       "id": 560,
@@ -3237,7 +5496,7 @@
         750
       ],
       "flags": {},
-      "order": 41,
+      "order": 73,
       "mode": 4,
       "inputs": [
         {
@@ -3435,2241 +5694,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
-    },
-    {
-      "id": 15,
-      "type": "PrimitiveString",
-      "pos": [
-        -6500,
-        4120
-      ],
-      "size": [
-        320,
-        58
-      ],
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            1
-          ]
-        }
-      ],
-      "title": "Input Path",
-      "properties": {
-        "Node name for S&R": "InputPath",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.59"
-      },
-      "widgets_values": [
-        "F:\\comfyui-workdirs\\output\\spaceship\\raw"
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 13,
-      "type": "PrimitiveString",
-      "pos": [
-        -6500,
-        4220
-      ],
-      "size": [
-        320,
-        58
-      ],
-      "flags": {},
-      "order": 43,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            2
-          ]
-        }
-      ],
-      "title": "Project Name",
-      "properties": {
-        "Node name for S&R": "ProjectName",
-        "cnr_id": "comfy-core",
-        "ver": "0.3.59"
-      },
-      "widgets_values": [
-        "spaceship"
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 684,
-      "type": "SetNode",
-      "pos": [
-        -3410,
-        3610
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 109,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "link": 1128
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_is_first",
-      "properties": {
-        "previousName": "is_first"
-      },
-      "widgets_values": [
-        "is_first"
-      ]
-    },
-    {
-      "id": 716,
-      "type": "GetNode",
-      "pos": [
-        -3980,
-        3850
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 44,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            1125
-          ]
-        }
-      ],
-      "title": "Get_debug",
-      "properties": {},
-      "widgets_values": [
-        "debug"
-      ]
-    },
-    {
-      "id": 674,
-      "type": "WanVACEPrepBatch",
-      "pos": [
-        -3840,
-        4080
-      ],
-      "size": [
-        210,
-        282
-      ],
-      "flags": {},
-      "order": 89,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "video_1",
-          "type": "IMAGE",
-          "link": 1047
-        },
-        {
-          "name": "video_2",
-          "type": "IMAGE",
-          "link": 1048
-        },
-        {
-          "name": "is_first",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "is_first"
-          },
-          "link": 1042
-        },
-        {
-          "name": "is_last",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "is_last"
-          },
-          "link": 1043
-        },
-        {
-          "name": "context_frames",
-          "type": "INT",
-          "widget": {
-            "name": "context_frames"
-          },
-          "link": 1021
-        },
-        {
-          "name": "replace_frames",
-          "type": "INT",
-          "widget": {
-            "name": "replace_frames"
-          },
-          "link": 1022
-        },
-        {
-          "name": "debug",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "debug"
-          },
-          "link": 1092
-        }
-      ],
-      "outputs": [
-        {
-          "name": "control_video",
-          "type": "IMAGE",
-          "links": [
-            1117
-          ]
-        },
-        {
-          "name": "control_mask",
-          "type": "MASK",
-          "links": [
-            1025
-          ]
-        },
-        {
-          "name": "length",
-          "type": "INT",
-          "links": [
-            1026
-          ]
-        },
-        {
-          "name": "start_images",
-          "type": "IMAGE",
-          "links": [
-            1050
-          ]
-        },
-        {
-          "name": "end_images",
-          "type": "IMAGE",
-          "links": [
-            1049
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "WanVACEPrepBatch",
-        "cnr_id": "comfyui-wan-vace-prep",
-        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
-      },
-      "widgets_values": [
-        false,
-        false,
-        8,
-        8,
-        0,
-        true
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 719,
-      "type": "SetNode",
-      "pos": [
-        -2860,
-        4860
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 121,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "link": 1094
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_clip2_filename",
-      "properties": {
-        "previousName": "clip2_filename"
-      },
-      "widgets_values": [
-        "clip2_filename"
-      ]
-    },
-    {
-      "id": 577,
-      "type": "Basic data handling: FlowSelect",
-      "pos": [
-        -3970,
-        5880
-      ],
-      "size": [
-        210,
-        78
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 114,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "value",
-          "type": "*",
-          "link": 860
-        },
-        {
-          "name": "select",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "select"
-          },
-          "link": 859
-        }
-      ],
-      "outputs": [
-        {
-          "name": "true",
-          "type": "*",
-          "links": [
-            870
-          ]
-        },
-        {
-          "name": "false",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Basic data handling: FlowSelect",
-        "cnr_id": "basic_data_handling",
-        "ver": "1.0.0"
-      },
-      "widgets_values": [
-        false
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 583,
-      "type": "GetNode",
-      "pos": [
-        -4250,
-        6080
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 45,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            864,
-            865
-          ]
-        }
-      ],
-      "title": "Get_clip2_filename",
-      "properties": {},
-      "widgets_values": [
-        "clip2_filename"
-      ]
-    },
-    {
-      "id": 582,
-      "type": "StringReplace",
-      "pos": [
-        -4060,
-        6040
-      ],
-      "size": [
-        210,
-        196
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 83,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string",
-          "type": "STRING",
-          "widget": {
-            "name": "string"
-          },
-          "link": 864
-        },
-        {
-          "name": "find",
-          "type": "STRING",
-          "widget": {
-            "name": "find"
-          },
-          "link": 865
-        },
-        {
-          "name": "replace",
-          "type": "STRING",
-          "widget": {
-            "name": "replace"
-          },
-          "link": 866
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            867
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "StringReplace",
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 572,
-      "type": "Basic data handling: PathOutputDir",
-      "pos": [
-        -4250,
-        6040
-      ],
-      "size": [
-        140,
-        26
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 46,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "output_path",
-          "type": "STRING",
-          "links": [
-            866
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Basic data handling: PathOutputDir",
-        "cnr_id": "basic_data_handling",
-        "ver": "1.0.0"
-      },
-      "widgets_values": [],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 498,
-      "type": "StringConcatenate",
-      "pos": [
-        -4110,
-        5960
-      ],
-      "size": [
-        210,
-        166
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 97,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 867
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 718
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            860
-          ]
-        }
-      ],
-      "title": "output / work_dir",
-      "properties": {
-        "Node name for S&R": "StringConcatenate",
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [
-        "output",
-        "",
-        "/"
-      ]
-    },
-    {
-      "id": 578,
-      "type": "GetNode",
-      "pos": [
-        -4120,
-        5880
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 47,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            859
-          ]
-        }
-      ],
-      "title": "Get_is_last",
-      "properties": {},
-      "widgets_values": [
-        "is_last"
-      ]
-    },
-    {
-      "id": 720,
-      "type": "MarkdownNote",
-      "pos": [
-        -4180,
-        6130
-      ],
-      "size": [
-        260,
-        110
-      ],
-      "flags": {},
-      "order": 48,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Final Assembly Dependencies",
-      "properties": {},
-      "widgets_values": [
-        "This mess ensures the final join operation doesn't run until `is_last=True` and `clip2_filename` has a value. Writing out clip2 is the last thing we do in an iteration so it's a reliable indicator that the iteration is complete."
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 503,
-      "type": "GetNode",
-      "pos": [
-        -3490,
-        6000
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 49,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            693,
-            694
-          ]
-        }
-      ],
-      "title": "Get_project_name",
-      "properties": {},
-      "widgets_values": [
-        "project_name"
-      ]
-    },
-    {
-      "id": 718,
-      "type": "VHS_SelectFilename",
-      "pos": [
-        -3100,
-        4860
-      ],
-      "size": [
-        224.3333282470703,
-        58
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 115,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "filenames",
-          "type": "VHS_FILENAMES",
-          "link": 1093
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filename",
-          "type": "STRING",
-          "links": [
-            1094
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_SelectFilename",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "1.7.9"
-      },
-      "widgets_values": {
-        "index": -1
-      }
-    },
-    {
-      "id": 502,
-      "type": "StringConcatenate",
-      "pos": [
-        -3280,
-        6000
-      ],
-      "size": [
-        210,
-        166
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 84,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "string_a",
-          "type": "STRING",
-          "widget": {
-            "name": "string_a"
-          },
-          "link": 693
-        },
-        {
-          "name": "string_b",
-          "type": "STRING",
-          "widget": {
-            "name": "string_b"
-          },
-          "link": 694
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            695
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "StringConcatenate",
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [
-        "",
-        "",
-        "/"
-      ]
-    },
-    {
-      "id": 500,
-      "type": "GetNode",
-      "pos": [
-        -3280,
-        5950
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 50,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            691
-          ]
-        }
-      ],
-      "title": "Get_fps",
-      "properties": {},
-      "widgets_values": [
-        "fps"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 497,
-      "type": "GetNode",
-      "pos": [
-        -4270,
-        5960
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 51,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            718
-          ]
-        }
-      ],
-      "title": "Get_work_dir",
-      "properties": {},
-      "widgets_values": [
-        "work_dir"
-      ]
-    },
-    {
-      "id": 723,
-      "type": "SetNode",
-      "pos": [
-        -3410,
-        3530
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 107,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "link": 1126
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_work_dir",
-      "properties": {
-        "previousName": "work_dir"
-      },
-      "widgets_values": [
-        "work_dir"
-      ]
-    },
-    {
-      "id": 568,
-      "type": "MarkdownNote",
-      "pos": [
-        -5000,
-        4120
-      ],
-      "size": [
-        450,
-        180
-      ],
-      "flags": {},
-      "order": 52,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Cross Fade",
-      "properties": {},
-      "widgets_values": [
-        "# Cross Fade\n### The context frames at the start and end of the VACE generation are cross-faded over the original frames.\n- This helps to mute the color/brightness shift that VACE can introduce.\n- Since context frames in the original videos and the VACE generation are identical except for the color/brightness shift we are addressing, there is no danger of the cross fade introducing ghosting or blur.\n- To disable cross fade, open the **Cross Fade Contexts** subgraph and set *start_level* and *end_level* both to 1.00 on the two Cross Fade nodes."
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 715,
-      "type": "SetNode",
-      "pos": [
-        -5420,
-        4250
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 91,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "link": 1090
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_debug",
-      "properties": {
-        "previousName": "debug"
-      },
-      "widgets_values": [
-        "debug"
-      ]
-    },
-    {
-      "id": 585,
-      "type": "VRAM_Debug",
-      "pos": [
-        -3820,
-        5850
-      ],
-      "size": [
-        310,
-        190
-      ],
-      "flags": {},
-      "order": 120,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "any_input",
-          "shape": 7,
-          "type": "*",
-          "link": 870
-        },
-        {
-          "name": "image_pass",
-          "shape": 7,
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "model_pass",
-          "shape": 7,
-          "type": "MODEL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "any_output",
-          "type": "*",
-          "links": [
-            928
-          ]
-        },
-        {
-          "name": "image_pass",
-          "type": "IMAGE",
-          "links": null
-        },
-        {
-          "name": "model_pass",
-          "type": "MODEL",
-          "links": null
-        },
-        {
-          "label": "13,460,005,914   freemem_before",
-          "name": "freemem_before",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "label": "32,268,615,680      freemem_after",
-          "name": "freemem_after",
-          "type": "INT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VRAM_Debug",
-        "cnr_id": "comfyui-kjnodes",
-        "ver": "ff7f876c09ff5a53be051073c3c1731b96ee31a3"
-      },
-      "widgets_values": [
-        true,
-        true,
-        true
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 725,
-      "type": "MarkdownNote",
-      "pos": [
-        -3770,
-        6090
-      ],
-      "size": [
-        230,
-        150
-      ],
-      "flags": {},
-      "order": 53,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "RAM management",
-      "properties": {},
-      "widgets_values": [
-        "Depending on how many clips you are joining, final video assembly can be very RAM (not VRAM) intensive.  \n\nClearing ComfyUI cahce and unloading models can free up system RAM as well as VRAM."
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 646,
-      "type": "LoadVideosFromFolderSimple",
-      "pos": [
-        -3460,
-        5840
-      ],
-      "size": [
-        290,
-        82
-      ],
-      "flags": {},
-      "order": 126,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "folder_path",
-          "type": "STRING",
-          "widget": {
-            "name": "folder_path"
-          },
-          "link": 928
-        },
-        {
-          "name": "debug",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "debug"
-          },
-          "link": 1097
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            929
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadVideosFromFolderSimple",
-        "cnr_id": "comfyui-wan-vace-prep",
-        "ver": "ee7ecb7470f06bae23741585b285aea7f82fdce9"
-      },
-      "widgets_values": [
-        "",
-        false
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 726,
-      "type": "GetNode",
-      "pos": [
-        -3480,
-        5960
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 54,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            1097
-          ]
-        }
-      ],
-      "title": "Get_debug",
-      "properties": {},
-      "widgets_values": [
-        "debug"
-      ]
-    },
-    {
-      "id": 366,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        -3370,
-        4870
-      ],
-      "size": [
-        220,
-        454
-      ],
-      "flags": {},
-      "order": 99,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1054
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 1064
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": 905
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": [
-            1093
-          ]
-        }
-      ],
-      "title": "Clip2 Lossless Save",
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
-      },
-      "widgets_values": {
-        "frame_rate": 16,
-        "loop_count": 0,
-        "filename_prefix": "",
-        "format": "video/ffv1-mkv",
-        "level": "3",
-        "coder": "1",
-        "context": "1",
-        "gop_size": 1,
-        "slices": "16",
-        "slicecrc": "1",
-        "pix_fmt": "yuv444p",
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": true,
-          "paused": false,
-          "params": {
-            "filename": "index002_clip2_00001.mkv",
-            "subfolder": "spaceship\\vace-work",
-            "type": "output",
-            "format": "video/ffv1-mkv",
-            "frame_rate": 16,
-            "workflow": "index002_clip2_00001.png",
-            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index002_clip2_00001.mkv"
-          }
-        }
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 667,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        -3810,
-        4890
-      ],
-      "size": [
-        220,
-        454
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 98,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1051
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 1055
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": 1007
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": []
-        }
-      ],
-      "title": "Clip1 Lossless Save",
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
-      },
-      "widgets_values": {
-        "frame_rate": 16,
-        "loop_count": 0,
-        "filename_prefix": "",
-        "format": "video/ffv1-mkv",
-        "level": "3",
-        "coder": "1",
-        "context": "1",
-        "gop_size": 1,
-        "slices": "16",
-        "slicecrc": "1",
-        "pix_fmt": "yuv444p",
-        "save_metadata": false,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": true,
-          "paused": false,
-          "params": {
-            "filename": "index004_clip1_00001.mkv",
-            "subfolder": "spaceship\\vace-work",
-            "type": "output",
-            "format": "video/ffv1-mkv",
-            "frame_rate": 16,
-            "workflow": "index004_clip1_00001.png",
-            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\vace-work\\index004_clip1_00001.mkv"
-          }
-        }
-      },
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 669,
-      "type": "GetNode",
-      "pos": [
-        -4220,
-        5010
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 55,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            1006,
-            1065,
-            1067
-          ]
-        }
-      ],
-      "title": "Get_workfile_prefix",
-      "properties": {},
-      "widgets_values": [
-        "workfile_prefix"
-      ]
-    },
-    {
-      "id": 370,
-      "type": "GetNode",
-      "pos": [
-        -4220,
-        4960
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 56,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            1055,
-            1056,
-            1064
-          ]
-        }
-      ],
-      "title": "Get_fps",
-      "properties": {},
-      "widgets_values": [
-        "fps"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 687,
-      "type": "MarkdownNote",
-      "pos": [
-        -3680,
-        5410
-      ],
-      "size": [
-        470,
-        270
-      ],
-      "flags": {},
-      "order": 57,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Clip Files",
-      "properties": {},
-      "widgets_values": [
-        "- **clip1** - Frames from the current video that come *before* the transition region\n- **clip2** - VACE-generated transition frames between the current video and the next video  \n- **clip3** - Frames from the final video that come *after* the last transition region\n\n**clip3 only exists for the final iteration**\n\nEach video appears in two iterations - once as video_2 (the \"next\" video) and once as video_1 (the \"current\" video). The frames after each transition get saved when that video becomes video_1 in the next iteration. \n\nThe final video is the exception: it only appears as video_2 in the last iteration, so there's no \"next iteration\" to save its ending frames. That's why we save clip3 during the last iteration - to capture the ending of the final video.\n\n**Example with 3 videos:**\n- Iteration 0: video1→video2 → saves clip1 (video1 start) + clip2 (transition)\n- Iteration 1: video2→video3 → saves clip1 (video2 middle) + clip2 (transition) + clip3 (video3 end)"
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 721,
-      "type": "MarkdownNote",
-      "pos": [
-        -2870,
-        5850
-      ],
-      "size": [
-        350,
-        130
-      ],
-      "flags": {},
-      "order": 58,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Rerunning the Join step",
-      "properties": {},
-      "widgets_values": [
-        "# If the Join step fails\nUse *Load Videos From Folder (Simple)* and *Video Combine* nodes to manually combine clips from the `project_name/vace-work` directory if you need to rerun this step.\n"
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 595,
-      "type": "PrimitiveBoolean",
-      "pos": [
-        -5000,
-        4020
-      ],
-      "size": [
-        270,
-        60
-      ],
-      "flags": {},
-      "order": 59,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "enable_cross_fade",
-          "name": "value",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            876
-          ]
-        }
-      ],
-      "title": "Post-Processing: Cross Fade",
-      "properties": {
-        "Node name for S&R": "PrimitiveBoolean",
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [
-        true
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 499,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        -3110,
-        5790
-      ],
-      "size": [
-        220.75,
-        460.921875
-      ],
-      "flags": {},
-      "order": 127,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 929
-        },
-        {
-          "name": "audio",
-          "shape": 7,
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "shape": 7,
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "shape": 7,
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "frame_rate",
-          "type": "FLOAT",
-          "widget": {
-            "name": "frame_rate"
-          },
-          "link": 691
-        },
-        {
-          "name": "filename_prefix",
-          "type": "STRING",
-          "widget": {
-            "name": "filename_prefix"
-          },
-          "link": 695
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine",
-        "cnr_id": "comfyui-videohelpersuite",
-        "ver": "537f3a02269e14ab4b0350d4189a52034e9a3b12"
-      },
-      "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "trim_to_audio": false,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "spaceship_00001.mp4",
-            "subfolder": "spaceship",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 16,
-            "workflow": "spaceship_00001.png",
-            "fullpath": "f:\\comfyui-workdirs\\output\\spaceship\\spaceship_00001.mp4"
-          }
-        }
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 694,
-      "type": "SetNode",
-      "pos": [
-        -3530,
-        4170
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 104,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "link": 1050
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_clip1",
-      "properties": {
-        "previousName": "clip1"
-      },
-      "widgets_values": [
-        "clip1"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 411,
-      "type": "SetNode",
-      "pos": [
-        -3530,
-        4090
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 102,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "link": 1025
-        }
-      ],
-      "outputs": [
-        {
-          "name": "*",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Set_control_mask",
-      "properties": {
-        "previousName": "control_mask"
-      },
-      "widgets_values": [
-        "control_mask"
-      ],
-      "color": "#1c5715",
-      "bgcolor": "#1f401b"
-    },
-    {
-      "id": 738,
-      "type": "MarkdownNote",
-      "pos": [
-        -3600,
-        4260
-      ],
-      "size": [
-        340,
-        150
-      ],
-      "flags": {},
-      "order": 60,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Frame Math",
-      "properties": {},
-      "widgets_values": [
-        "\nThis workflow will generate \n```\n(Context Frames * 2) + (Replace Frames * 2) + New Frames + 1\n```\n total frames. (The +1 is to meet the Wan's preference for generating 4n+1 frames at a time. If we don't precisely hit that, the model will quietly round down our requested number of frames to the nearest 4n+1.)\nThe same rules apply here as with regular Wan generations, so 81 total frames is still the sweet spot. "
-      ],
-      "color": "#233",
-      "bgcolor": "#355"
-    },
-    {
-      "id": 717,
-      "type": "GetNode",
-      "pos": [
-        -4230,
-        4350
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 61,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            1092
-          ]
-        }
-      ],
-      "title": "Get_debug",
-      "properties": {},
-      "widgets_values": [
-        "debug"
-      ]
-    },
-    {
-      "id": 705,
-      "type": "UNETLoader",
-      "pos": [
-        -6490,
-        4400
-      ],
-      "size": [
-        420,
-        90
-      ],
-      "flags": {},
-      "order": 62,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1072
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader",
-        "cnr_id": "comfy-core",
-        "ver": "0.12.2"
-      },
-      "widgets_values": [
-        "WAN 2.2\\Fun\\wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors",
-        "default"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 706,
-      "type": "UNETLoader",
-      "pos": [
-        -6490,
-        4530
-      ],
-      "size": [
-        420,
-        90
-      ],
-      "flags": {},
-      "order": 63,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1073
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader",
-        "cnr_id": "comfy-core",
-        "ver": "0.12.2"
-      },
-      "widgets_values": [
-        "WAN 2.2\\Fun\\wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors",
-        "default"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 707,
-      "type": "CLIPLoader",
-      "pos": [
-        -6490,
-        4660
-      ],
-      "size": [
-        420,
-        110
-      ],
-      "flags": {},
-      "order": 64,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            1074
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPLoader",
-        "cnr_id": "comfy-core",
-        "ver": "0.12.2"
-      },
-      "widgets_values": [
-        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-        "wan",
-        "default"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 713,
-      "type": "PrimitiveBoolean",
-      "pos": [
-        -5690,
-        4220
-      ],
-      "size": [
-        210,
-        58
-      ],
-      "flags": {},
-      "order": 65,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": [
-            1090
-          ]
-        }
-      ],
-      "title": "Enable Debug",
-      "properties": {
-        "Node name for S&R": "PrimitiveBoolean",
-        "cnr_id": "comfy-core",
-        "ver": "0.12.2"
-      },
-      "widgets_values": [
-        true
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 573,
-      "type": "PrimitiveInt",
-      "pos": [
-        -5680,
-        3830
-      ],
-      "size": [
-        240,
-        100
-      ],
-      "flags": {},
-      "order": 66,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            868
-          ]
-        }
-      ],
-      "title": "Index",
-      "properties": {
-        "Node name for S&R": "PrimitiveInt",
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [
-        0,
-        "increment"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 567,
-      "type": "MarkdownNote",
-      "pos": [
-        -6940,
-        3500
-      ],
-      "size": [
-        390,
-        440
-      ],
-      "flags": {},
-      "order": 67,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Workflow Parameters",
-      "properties": {},
-      "widgets_values": [
-        "# Parameters\n\nParameter |Description \n-|-\nInput Path | The location of your input files.\nProject Name | Output files will be placed in a directory with this name in your ComfyUI output directory. `ComfyUI/output/MyProject`\nContext Frames | The number of frames on either side of the transition that VACE will use as references for frame interpolation. 8 is a good value to start with.\nReplace Frames | The number of frames to regenerate on each side of the stitch. e.g. If set to 8, then VACE will generate 16 frames; 8 frames at the end of the first video and 8 frames at the start of the second video. This is the number of frames that will be *overwritten* by newly generated frames. Start small, 4 or 8 frames and adjust upward until you like the result.\nNew Frames | The number of additional frames to generate in addition to `Replace Frames`. Effectively extending the videos from the middle. If you have a reason to set `Replace Frames` to zero, then you'll want to add some frames here.\nPrompts | Prompts are optional here. The model is primarily guided by the motion cues in the context frames.\nDebug | Setting `Debug=True` will enable console logging of various parameters as the workflow run. If you want a little more progress feedback than the number of queued jobs remaining, this is a good way to get it.\n"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 566,
-      "type": "MarkdownNote",
-      "pos": [
-        -7040,
-        3990
-      ],
-      "size": [
-        510,
-        970
-      ],
-      "flags": {},
-      "order": 68,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "How To Use This Workflow",
-      "properties": {},
-      "widgets_values": [
-        "\n\n# How to Use This Workflow\n## The purpose of this workflow is to generate transition frames between two or more input videos.\n### This smooths out sudden motion shifts between clips and replaces noisy frames that sometimes appear at clip endings.\n\n---\n## IMPORTANT: Before running this workflow, you must configure it for your system. What works for my system probably doesn't work for yours. Please read the green notes for guidance.\n\nFor initial setup and run, you should only need to interact with the two nearby groups, ***Configuration*** and ***Model Load and Inference***.\n\n---\n\n### 1. Select models appropriate for your system\nSelect your VACE models. Choose models that match what you usually run in your normal Wan workflow. If you usually run FP8 for video generation, choose FP8 VACE models. If you usually use Q4 GGUF, use Q4 GGUF VACE models.\n\n### 2. Configure the KSamplers and Optimizations\nIn the Sampler subgraph, toggle common optimizations to suit your environment. As with the model choice, try to match the sampler settings and optimizations that you normally use for Wan generation. \n\n### 3. Clean up from previous runs\n- **Set the index parameter to 0.** `index` counts your input files, starting from 0. Each time you run the workflow, `index` is incremented, allowing the workflow to load the next set of inputs. If you forget to reset `index` to 0, the generations won't begin with the first video in your input directory.  \nIf the value of `index` is greater than the number of videos in your input directory, you'll see an error like *\"sequence item 1: expected str instance, NoneType found.\"* Learn to recognize this as a reminder to reset `index` to 0.\n- **Clear ComfyUI's run cache.** It's important to clear the execution cache between runs if you have run the workflow fully or partially already. Failure to do this will cause ComfyUI to skip steps that it has cached. Go to *C -> Edit -> Unload Models and Execution Cache*. You may also have a button next to **Manager** on your top button bar that does this.\n- **Delete or rename existing `vace-work` directory**. If you're re-running, don't leave previous work files in your project directory or they'll be included in your final video.\n\n### 4. Prepare inputs\nYour input videos should be placed in an empty directory and named such that they'll sort in the order they're meant to be viewed. e.g. `video01.mp4`, `video02.mp4`, etc. *Use zero-padding in your file names to avoid issues from lexical sorting.* If your files are named `video1.mp4`, `video9.mp4`, `video10.mp4`, they'll get sorted to `video1.mp4`, `video10.mp4`, `video9.mp4`, which is probably not what you want. Naming them `video01.mp4`, `video09.mp4`, `video10.mp4` will force correct sort order.\n\n### 5. Set the workflow parameters\nSee above for details on parameters.\n\n### 6. Run the workflow once for every pair of videos to be joined\nSet the batch count to one less than your total number of input videos, and click Run.\n\n- Work files from the run will be created in `ComfyUI/output/[project-directory]/vace-work`. You may safely delete the work directory after a successful run.\n- After frame generation completes, the final output video will be stitched together and placed in your specified project directory, `ComfyUI/output/[project-directory]`.\n\n"
-      ],
-      "color": "#146e47",
-      "bgcolor": "#005a33"
-    },
-    {
-      "id": 14,
-      "type": "mxSlider",
-      "pos": [
-        -6500,
-        3910
-      ],
-      "size": [
-        320,
-        30
-      ],
-      "flags": {},
-      "order": 69,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "",
-          "type": "INT",
-          "links": [
-            4
-          ]
-        }
-      ],
-      "title": "Replace Frames",
-      "properties": {
-        "Node name for S&R": "mxSlider",
-        "value": 8,
-        "min": 0,
-        "max": 40,
-        "step": 4,
-        "decimals": 0,
-        "snap": true,
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "0.9.92"
-      },
-      "widgets_values": [
-        8,
-        8,
-        0
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 704,
-      "type": "PrimitiveInt",
-      "pos": [
-        -5680,
-        3560
-      ],
-      "size": [
-        210,
-        82
-      ],
-      "flags": {},
-      "order": 70,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            1071
-          ]
-        }
-      ],
-      "title": "Seed",
-      "properties": {
-        "Node name for S&R": "PrimitiveInt",
-        "cnr_id": "comfy-core",
-        "ver": "0.12.2"
-      },
-      "widgets_values": [
-        423332426221692,
-        "randomize"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 569,
-      "type": "MarkdownNote",
-      "pos": [
-        -5680,
-        3060
-      ],
-      "size": [
-        480,
-        390
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 71,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Model links",
-      "properties": {},
-      "widgets_values": [
-        "# VACE Model download links\n\nYou need one of the VACE variants below to run this workflow. Choose the model format and quantization that most closely matches what you run for your regular Wan workflow.\n\n**Wan 2.2 Fun VACE**\n  - [bf16 and fp8](https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/diffusion_models)\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.2-VACE-Fun-A14B-GGUF/tree/main)\n\n**Wan 2.1 VACE**\n\n  - [fp16](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/diffusion_models/wan2.1_vace_14B_fp16.safetensors)\n\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/tree/main)\n\n**Kijai’s extracted Fun Vace 2.2 modules, for loading along with standard T2V models. [Native use examples here.](https://huggingface.co/Kijai/WanVideo_comfy/discussions/81)**\n\n  - [bf16](https://huggingface.co/Kijai/WanVideo_comfy/tree/main/Fun/VACE)\n  - [GGUF](https://huggingface.co/Kijai/WanVideo_comfy_GGUF/tree/main/VACE)\n\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   └── 📂 diffusion_models/\n│   │      ├── wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors\n│   │      └── wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors\n```\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 593,
-      "type": "MarkdownNote",
-      "pos": [
-        -6190,
-        3060
-      ],
-      "size": [
-        490,
-        390
-      ],
-      "flags": {},
-      "order": 72,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) \n\n- **v2.3** - This release prioritizes workflow reliability and maintainability. Core functionality remains unchanged. These changes reduce surface area for failures and improve debuggability. Stability and deterministic operation take priority over convenience features.\n\n  - **Looping workflow discontinued** – While still functional, the loop-based approach obscured workflow status and complicated targeted reruns for specific transitions. The batch workflow provides better visibility and control.\n  - **Reverted to lossless fv1 intermediate files** – The 16-bit PNG experiment provided no practical benefit and made addressing individual joins more cumbersome. Returning to the proven method.\n  - **New custom nodes for cleaner workflows** – *WAN VACE Prep Batch* and *VACE Batch Context* encapsulate operations that are awkward to express in visual nodes but straightforward in Python. *Load Videos From Folder (simple)* replaces the KJNodes equivalent to eliminate problematic VideoHelperSuite dependencies that fail in some environments.\n  - **Enhanced console logging** – Additional diagnostic output when `Debug=True` to aid troubleshooting.\n  - **Fewer custom node dependencies** \n\n- **v2.2** - *Complexity Reduction Release*\n  - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.\n  - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers with this workflow, but it's up to you to bring them and set them up.\n  - Custom node dependencies reduced.\n  - Un-subgraphed some functions. Sadly, this powerful and useful feature is still too unstable to distribute to users on varying versions of ComfyUI.\n- **v2.1**\n  - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output  \n- **v2.0**\n  - Workflow redesign. Core functionality is the same, but hopefully usability is improved\n  - (Experimental) Added cross fade at VACE boundaries to mitigate brightness/color shift\n  - (Experimental) Added color match for VACE frames to mitigate brightness/color shift\n  - Save intermediate work as 16 bit png instead of ffv1\n  - Integrated video join into the main workflow. No more need to run the join part separately.\n  - Excessive documentation\n  - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. \n  - Inputs and outputs are logged to the console for better progress tracking\n\n- **v1.3**\n  - removed lingering custom primitive node\n\n- **v1.2**\n  - Sort the input directory list.  \n\n- **v1.1**\n  - Preserve input framerate in workflow VACE outputs. Previously, all output was forced to 16fps. Note, you must manually set the framerate in the Join & Save output.  \n  - Changed default model/sampler to Wan 2.2 Fun VACE fp8/KSampler. GGUF, MoE, 2.1 are still available in the bypassed subgraphs.\n"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
-      "id": 494,
-      "type": "5b803fdb-e065-4df0-9485-4b7bd5a4879e",
-      "pos": [
-        -3120,
-        4570
-      ],
-      "size": [
-        210,
-        70
-      ],
-      "flags": {},
-      "order": 113,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "control_video",
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1113
-        },
-        {
-          "label": "context_frames",
-          "name": "num_frames",
-          "type": "INT",
-          "link": 885
-        },
-        {
-          "label": "vace_output",
-          "name": "images_1",
-          "type": "IMAGE",
-          "link": 880
-        }
-      ],
-      "outputs": [
-        {
-          "label": "vace_final",
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            882
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [],
-        "cnr_id": "comfy-core",
-        "ver": "0.4.0"
-      },
-      "widgets_values": [],
-      "color": "#323",
-      "bgcolor": "#535"
-    },
-    {
-      "id": 652,
-      "type": "GetNode",
-      "pos": [
-        -3980,
-        3810
-      ],
-      "size": [
-        210,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 73,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            1124
-          ]
-        }
-      ],
-      "title": "Get_index",
-      "properties": {},
-      "widgets_values": [
-        "index"
-      ],
-      "color": "#1b4669",
-      "bgcolor": "#29699c"
-    },
-    {
-      "id": 745,
-      "type": "WanVACEBatchContext",
-      "pos": [
-        -3750,
-        3590
-      ],
-      "size": [
-        230,
-        240
-      ],
-      "flags": {},
-      "order": 95,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input_list",
-          "type": "STRING",
-          "link": 1121
-        },
-        {
-          "name": "input_dir",
-          "type": "STRING",
-          "widget": {
-            "name": "input_dir"
-          },
-          "link": 1122
-        },
-        {
-          "name": "project_name",
-          "type": "STRING",
-          "widget": {
-            "name": "project_name"
-          },
-          "link": 1123
-        },
-        {
-          "name": "index",
-          "type": "INT",
-          "widget": {
-            "name": "index"
-          },
-          "link": 1124
-        },
-        {
-          "name": "debug",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "debug"
-          },
-          "link": 1125
-        }
-      ],
-      "outputs": [
-        {
-          "name": "work_dir",
-          "type": "STRING",
-          "links": [
-            1126
-          ]
-        },
-        {
-          "name": "workfile_prefix",
-          "type": "STRING",
-          "links": [
-            1127
-          ]
-        },
-        {
-          "name": "is_first",
-          "type": "BOOLEAN",
-          "links": [
-            1128
-          ]
-        },
-        {
-          "name": "is_last",
-          "type": "BOOLEAN",
-          "links": [
-            1129
-          ]
-        },
-        {
-          "name": "video_1_filename",
-          "type": "STRING",
-          "links": [
-            1130
-          ]
-        },
-        {
-          "name": "video_2_filename",
-          "type": "STRING",
-          "links": [
-            1131
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "WanVACEBatchContext"
-      },
-      "widgets_values": [
-        "",
-        ".",
-        0,
-        false
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -5832,14 +5856,6 @@
       498,
       1,
       "STRING"
-    ],
-    [
-      859,
-      578,
-      0,
-      577,
-      1,
-      "BOOLEAN"
     ],
     [
       860,
@@ -6106,44 +6122,12 @@
       "MASK"
     ],
     [
-      1026,
-      674,
-      2,
-      676,
-      0,
-      "INT"
-    ],
-    [
       1028,
       425,
       0,
       435,
       10,
       "INT"
-    ],
-    [
-      1040,
-      683,
-      0,
-      671,
-      6,
-      "BOOLEAN"
-    ],
-    [
-      1042,
-      685,
-      0,
-      674,
-      2,
-      "BOOLEAN"
-    ],
-    [
-      1043,
-      686,
-      0,
-      674,
-      3,
-      "BOOLEAN"
     ],
     [
       1047,
@@ -6159,38 +6143,6 @@
       0,
       674,
       1,
-      "IMAGE"
-    ],
-    [
-      1049,
-      674,
-      4,
-      693,
-      0,
-      "IMAGE"
-    ],
-    [
-      1050,
-      674,
-      3,
-      694,
-      0,
-      "IMAGE"
-    ],
-    [
-      1051,
-      695,
-      0,
-      667,
-      0,
-      "IMAGE"
-    ],
-    [
-      1052,
-      696,
-      0,
-      671,
-      0,
       "IMAGE"
     ],
     [
@@ -6302,7 +6254,7 @@
       717,
       0,
       674,
-      6,
+      7,
       "BOOLEAN"
     ],
     [
@@ -6370,92 +6322,172 @@
       "IMAGE"
     ],
     [
-      1121,
+      1135,
       267,
       0,
-      745,
+      746,
       0,
       "STRING"
     ],
     [
-      1122,
+      1136,
       53,
       0,
-      745,
+      746,
       1,
       "STRING"
     ],
     [
-      1123,
+      1137,
       651,
       0,
-      745,
+      746,
       2,
       "STRING"
     ],
     [
-      1124,
+      1138,
       652,
       0,
-      745,
+      746,
       3,
       "INT"
     ],
     [
-      1125,
+      1139,
       716,
       0,
-      745,
+      746,
       4,
       "BOOLEAN"
     ],
     [
-      1126,
-      745,
+      1140,
+      746,
       0,
       723,
       0,
       "STRING"
     ],
     [
-      1127,
-      745,
+      1141,
+      746,
       1,
       658,
       0,
       "STRING"
     ],
     [
-      1128,
-      745,
+      1142,
+      746,
       2,
-      684,
-      0,
-      "BOOLEAN"
-    ],
-    [
-      1129,
-      745,
-      3,
-      682,
-      0,
-      "BOOLEAN"
-    ],
-    [
-      1130,
-      745,
-      4,
       661,
       2,
       "STRING"
     ],
     [
-      1131,
-      745,
-      5,
+      1143,
+      746,
+      3,
       662,
       2,
       "STRING"
+    ],
+    [
+      1144,
+      746,
+      4,
+      747,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      1145,
+      746,
+      5,
+      748,
+      0,
+      "BOOLEAN"
+    ],
+    [
+      1146,
+      685,
+      0,
+      674,
+      2,
+      "BOOLEAN"
+    ],
+    [
+      1147,
+      686,
+      0,
+      674,
+      3,
+      "BOOLEAN"
+    ],
+    [
+      1148,
+      430,
+      0,
+      674,
+      6,
+      "INT"
+    ],
+    [
+      1149,
+      674,
+      4,
+      676,
+      0,
+      "INT"
+    ],
+    [
+      1151,
+      674,
+      5,
+      750,
+      0,
+      "IMAGE"
+    ],
+    [
+      1152,
+      674,
+      6,
+      751,
+      0,
+      "IMAGE"
+    ],
+    [
+      1153,
+      696,
+      0,
+      671,
+      0,
+      "IMAGE"
+    ],
+    [
+      1154,
+      695,
+      0,
+      667,
+      0,
+      "IMAGE"
+    ],
+    [
+      1155,
+      683,
+      0,
+      671,
+      6,
+      "BOOLEAN"
+    ],
+    [
+      1156,
+      578,
+      0,
+      577,
+      1,
+      "BOOLEAN"
     ]
   ],
   "groups": [
@@ -16986,10 +17018,10 @@
     "VHS_MetadataImage": false,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.9657648580254617,
+      "scale": 0.5451490849174626,
       "offset": [
-        4306.227477259745,
-        -3190.383156380517
+        6799.423475861507,
+        -2773.542613704139
       ]
     }
   },

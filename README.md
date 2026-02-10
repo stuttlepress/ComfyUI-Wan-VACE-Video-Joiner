@@ -55,6 +55,7 @@ Enable  sageattention and torch compile if you know your system supports them.
 ---
 
 ## Changelog
+- **v2.4** - Minor tweaks. Adjust sage attention, torch compile defaults.
 - **v2.3** This release prioritizes workflow reliability and maintainability. Core functionality remains unchanged. These changes reduce surface area for failures and improve debuggability. Stability and deterministic operation take priority over convenience features.
 
   - **Looping workflow discontinued** – While still functional, the loop-based approach obscured workflow status and complicated targeted reruns for specific transitions. The batch workflow provides better visibility and control.

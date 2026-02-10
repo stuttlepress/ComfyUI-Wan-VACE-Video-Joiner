@@ -874,7 +874,7 @@
       "mode": 0,
       "inputs": [],
       "outputs": [],
-      "title": "Version 2.3",
+      "title": "Version 2.4",
       "properties": {
         "fontSize": 48,
         "fontFamily": "Arial",
@@ -2360,237 +2360,6 @@
       ],
       "color": "#233",
       "bgcolor": "#355"
-    },
-    {
-      "id": 435,
-      "type": "80597ad3-cf64-4c5c-aeaf-fa576a7520db",
-      "pos": [
-        -5680,
-        4530
-      ],
-      "size": [
-        650,
-        838.375
-      ],
-      "flags": {},
-      "order": 89,
-      "mode": 0,
-      "inputs": [
-        {
-          "label": "model_high",
-          "name": "model",
-          "type": "MODEL",
-          "link": 1072
-        },
-        {
-          "label": "model_low",
-          "name": "model_1",
-          "type": "MODEL",
-          "link": 1073
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 1074
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 1075
-        },
-        {
-          "label": "control_video",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "link": 630
-        },
-        {
-          "label": "control_mask",
-          "name": "MASK",
-          "type": "MASK",
-          "link": 559
-        },
-        {
-          "label": "positive_prompt",
-          "name": "value",
-          "type": "STRING",
-          "widget": {
-            "name": "value"
-          },
-          "link": 565
-        },
-        {
-          "label": "negative_prompt",
-          "name": "value_1",
-          "type": "STRING",
-          "widget": {
-            "name": "value_1"
-          },
-          "link": 564
-        },
-        {
-          "label": "width",
-          "name": "value_2",
-          "type": "INT",
-          "widget": {
-            "name": "value_2"
-          },
-          "link": 560
-        },
-        {
-          "label": "height",
-          "name": "value_3",
-          "type": "INT",
-          "widget": {
-            "name": "value_3"
-          },
-          "link": 561
-        },
-        {
-          "label": "length",
-          "name": "value_4",
-          "type": "INT",
-          "widget": {
-            "name": "value_4"
-          },
-          "link": 1028
-        },
-        {
-          "label": "seed",
-          "name": "value_7",
-          "type": "INT",
-          "widget": {
-            "name": "value_7"
-          },
-          "link": 563
-        },
-        {
-          "label": "➡️enable_torch_compile",
-          "name": "value_8",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "value_8"
-          },
-          "link": null
-        },
-        {
-          "label": "➡️sage_attention",
-          "name": "value_9",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "value_9"
-          },
-          "link": null
-        },
-        {
-          "label": "➡️nag",
-          "name": "value_10",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "value_10"
-          },
-          "link": null
-        },
-        {
-          "label": "➡️lightx2v",
-          "name": "value_11",
-          "type": "BOOLEAN",
-          "widget": {
-            "name": "value_11"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "label": "image",
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1114
-          ]
-        }
-      ],
-      "properties": {
-        "proxyWidgets": [
-          [
-            "-1",
-            "value_2"
-          ],
-          [
-            "-1",
-            "value_3"
-          ],
-          [
-            "-1",
-            "value_4"
-          ],
-          [
-            "-1",
-            "value_1"
-          ],
-          [
-            "-1",
-            "value"
-          ],
-          [
-            "-1",
-            "value_7"
-          ],
-          [
-            "-1",
-            "value_9"
-          ],
-          [
-            "-1",
-            "value_8"
-          ],
-          [
-            "-1",
-            "value_10"
-          ],
-          [
-            "-1",
-            "value_11"
-          ],
-          [
-            "319",
-            "lora_name"
-          ],
-          [
-            "319",
-            "strength_model"
-          ],
-          [
-            "320",
-            "lora_name"
-          ],
-          [
-            "320",
-            "strength_model"
-          ],
-          [
-            "-1",
-            "vhslatentpreview"
-          ]
-        ],
-        "cnr_id": "comfy-core",
-        "ver": "0.3.59"
-      },
-      "widgets_values": [
-        0,
-        0,
-        0,
-        "",
-        "",
-        0,
-        false,
-        false,
-        false,
-        true
-      ],
-      "color": "#323",
-      "bgcolor": "#535"
     },
     {
       "id": 425,
@@ -4196,30 +3965,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 593,
-      "type": "MarkdownNote",
-      "pos": [
-        -6190,
-        3060
-      ],
-      "size": [
-        490,
-        390
-      ],
-      "flags": {},
-      "order": 65,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "title": "Changelog",
-      "properties": {},
-      "widgets_values": [
-        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) \n\n- **v2.3** - This release prioritizes workflow reliability and maintainability. Core functionality remains unchanged. These changes reduce surface area for failures and improve debuggability. Stability and deterministic operation take priority over convenience features.\n\n  - **Looping workflow discontinued** – While still functional, the loop-based approach obscured workflow status and complicated targeted reruns for specific transitions. The batch workflow provides better visibility and control.\n  - **Reverted to lossless fv1 intermediate files** – The 16-bit PNG experiment provided no practical benefit and made addressing individual joins more cumbersome. Returning to the proven method.\n  - **New custom nodes for cleaner workflows** – *WAN VACE Prep Batch* and *VACE Batch Context* encapsulate operations that are awkward to express in visual nodes but straightforward in Python. *Load Videos From Folder (simple)* replaces the KJNodes equivalent to eliminate problematic VideoHelperSuite dependencies that fail in some environments.\n  - **Enhanced console logging** – Additional diagnostic output when `Debug=True` to aid troubleshooting.\n  - **Fewer custom node dependencies** \n\n- **v2.2** - *Complexity Reduction Release*\n  - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.\n  - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers with this workflow, but it's up to you to bring them and set them up.\n  - Custom node dependencies reduced.\n  - Un-subgraphed some functions. Sadly, this powerful and useful feature is still too unstable to distribute to users on varying versions of ComfyUI.\n- **v2.1**\n  - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output  \n- **v2.0**\n  - Workflow redesign. Core functionality is the same, but hopefully usability is improved\n  - (Experimental) Added cross fade at VACE boundaries to mitigate brightness/color shift\n  - (Experimental) Added color match for VACE frames to mitigate brightness/color shift\n  - Save intermediate work as 16 bit png instead of ffv1\n  - Integrated video join into the main workflow. No more need to run the join part separately.\n  - Excessive documentation\n  - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. \n  - Inputs and outputs are logged to the console for better progress tracking\n\n- **v1.3**\n  - removed lingering custom primitive node\n\n- **v1.2**\n  - Sort the input directory list.  \n\n- **v1.1**\n  - Preserve input framerate in workflow VACE outputs. Previously, all output was forced to 16fps. Note, you must manually set the framerate in the Join & Save output.  \n  - Changed default model/sampler to Wan 2.2 Fun VACE fp8/KSampler. GGUF, MoE, 2.1 are still available in the bypassed subgraphs.\n"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159"
-    },
-    {
       "id": 494,
       "type": "5b803fdb-e065-4df0-9485-4b7bd5a4879e",
       "pos": [
@@ -4395,7 +4140,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 66,
+      "order": 65,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4655,7 +4400,7 @@
         90
       ],
       "flags": {},
-      "order": 67,
+      "order": 66,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4759,7 +4504,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 68,
+      "order": 67,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4789,7 +4534,7 @@
         150
       ],
       "flags": {},
-      "order": 69,
+      "order": 68,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4935,7 +4680,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 70,
+      "order": 69,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5072,7 +4817,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 71,
+      "order": 70,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5459,7 +5204,7 @@
         100
       ],
       "flags": {},
-      "order": 72,
+      "order": 71,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -5496,7 +5241,7 @@
         750
       ],
       "flags": {},
-      "order": 73,
+      "order": 72,
       "mode": 4,
       "inputs": [
         {
@@ -5694,6 +5439,257 @@
       ],
       "color": "#323",
       "bgcolor": "#535"
+    },
+    {
+      "id": 435,
+      "type": "80597ad3-cf64-4c5c-aeaf-fa576a7520db",
+      "pos": [
+        -5680,
+        4530
+      ],
+      "size": [
+        650,
+        838.375
+      ],
+      "flags": {},
+      "order": 89,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "model_high",
+          "name": "model",
+          "type": "MODEL",
+          "link": 1072
+        },
+        {
+          "label": "model_low",
+          "name": "model_1",
+          "type": "MODEL",
+          "link": 1073
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1074
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 1075
+        },
+        {
+          "label": "control_video",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "link": 630
+        },
+        {
+          "label": "control_mask",
+          "name": "MASK",
+          "type": "MASK",
+          "link": 559
+        },
+        {
+          "label": "positive_prompt",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": 565
+        },
+        {
+          "label": "negative_prompt",
+          "name": "value_1",
+          "type": "STRING",
+          "widget": {
+            "name": "value_1"
+          },
+          "link": 564
+        },
+        {
+          "label": "width",
+          "name": "value_2",
+          "type": "INT",
+          "widget": {
+            "name": "value_2"
+          },
+          "link": 560
+        },
+        {
+          "label": "height",
+          "name": "value_3",
+          "type": "INT",
+          "widget": {
+            "name": "value_3"
+          },
+          "link": 561
+        },
+        {
+          "label": "length",
+          "name": "value_4",
+          "type": "INT",
+          "widget": {
+            "name": "value_4"
+          },
+          "link": 1028
+        },
+        {
+          "label": "seed",
+          "name": "value_7",
+          "type": "INT",
+          "widget": {
+            "name": "value_7"
+          },
+          "link": 563
+        },
+        {
+          "label": "➡️enable_torch_compile",
+          "name": "value_8",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value_8"
+          },
+          "link": null
+        },
+        {
+          "label": "➡️sage_attention",
+          "name": "value_9",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value_9"
+          },
+          "link": null
+        },
+        {
+          "label": "➡️nag",
+          "name": "value_10",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value_10"
+          },
+          "link": null
+        },
+        {
+          "label": "➡️lightx2v",
+          "name": "value_11",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "value_11"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1114
+          ]
+        }
+      ],
+      "properties": {
+        "proxyWidgets": [
+          [
+            "-1",
+            "value_2"
+          ],
+          [
+            "-1",
+            "value_3"
+          ],
+          [
+            "-1",
+            "value_4"
+          ],
+          [
+            "-1",
+            "value_1"
+          ],
+          [
+            "-1",
+            "value"
+          ],
+          [
+            "-1",
+            "value_7"
+          ],
+          [
+            "-1",
+            "value_9"
+          ],
+          [
+            "-1",
+            "value_8"
+          ],
+          [
+            "-1",
+            "value_10"
+          ],
+          [
+            "-1",
+            "value_11"
+          ],
+          [
+            "319",
+            "lora_name"
+          ],
+          [
+            "319",
+            "strength_model"
+          ],
+          [
+            "320",
+            "lora_name"
+          ],
+          [
+            "320",
+            "strength_model"
+          ]
+        ],
+        "cnr_id": "comfy-core",
+        "ver": "0.3.59"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        "",
+        "",
+        0,
+        false,
+        false,
+        false,
+        true
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 593,
+      "type": "MarkdownNote",
+      "pos": [
+        -6190,
+        3060
+      ],
+      "size": [
+        490,
+        390
+      ],
+      "flags": {},
+      "order": 73,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299) \n\n- **v2.4** - Minor tweaks. Adjust sage attention, torch compile defaults.\n- **v2.3** - This release prioritizes workflow reliability and maintainability. Core functionality remains unchanged. These changes reduce surface area for failures and improve debuggability. Stability and deterministic operation take priority over convenience features.\n\n  - **Looping workflow discontinued** – While still functional, the loop-based approach obscured workflow status and complicated targeted reruns for specific transitions. The batch workflow provides better visibility and control.\n  - **Reverted to lossless fv1 intermediate files** – The 16-bit PNG experiment provided no practical benefit and made addressing individual joins more cumbersome. Returning to the proven method.\n  - **New custom nodes for cleaner workflows** – *WAN VACE Prep Batch* and *VACE Batch Context* encapsulate operations that are awkward to express in visual nodes but straightforward in Python. *Load Videos From Folder (simple)* replaces the KJNodes equivalent to eliminate problematic VideoHelperSuite dependencies that fail in some environments.\n  - **Enhanced console logging** – Additional diagnostic output when `Debug=True` to aid troubleshooting.\n  - **Fewer custom node dependencies** \n\n- **v2.2** - *Complexity Reduction Release*\n  - Removed fancy model loader which was causing headaches for safetensors users without any gguf models installed, and vice-versa.\n  - Removed the MOE KSampler and TripleKSampler subgraphs. You can still use these samplers with this workflow, but it's up to you to bring them and set them up.\n  - Custom node dependencies reduced.\n  - Un-subgraphed some functions. Sadly, this powerful and useful feature is still too unstable to distribute to users on varying versions of ComfyUI.\n- **v2.1**\n  - Add Prune Outputs to Video Combine nodes, preventing extra frames from being added to the output  \n- **v2.0**\n  - Workflow redesign. Core functionality is the same, but hopefully usability is improved\n  - (Experimental) Added cross fade at VACE boundaries to mitigate brightness/color shift\n  - (Experimental) Added color match for VACE frames to mitigate brightness/color shift\n  - Save intermediate work as 16 bit png instead of ffv1\n  - Integrated video join into the main workflow. No more need to run the join part separately.\n  - Excessive documentation\n  - (Experimental) New looping workflow variant that doesn't require manual queueing and index manipulation. \n  - Inputs and outputs are logged to the console for better progress tracking\n\n- **v1.3**\n  - removed lingering custom primitive node\n\n- **v1.2**\n  - Sort the input directory list.  \n\n- **v1.1**\n  - Preserve input framerate in workflow VACE outputs. Previously, all output was forced to 16fps. Note, you must manually set the framerate in the Join & Save output.  \n  - Changed default model/sampler to Wan 2.2 Fun VACE fp8/KSampler. GGUF, MoE, 2.1 are still available in the bypassed subgraphs.\n"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
     }
   ],
   "links": [
@@ -7464,8 +7460,8 @@
         "version": 1,
         "state": {
           "lastGroupId": 13,
-          "lastNodeId": 439,
-          "lastLinkId": 847,
+          "lastNodeId": 443,
+          "lastLinkId": 853,
           "lastRerouteId": 0
         },
         "revision": 0,
@@ -7814,106 +7810,6 @@
             ],
             "color": "#1b4669",
             "bgcolor": "#29699c"
-          },
-          {
-            "id": 136,
-            "type": "TorchCompileModelWanVideoV2",
-            "pos": [
-              -7330,
-              5590
-            ],
-            "size": [
-              350,
-              202
-            ],
-            "flags": {},
-            "order": 38,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 676
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MODEL",
-                "name": "MODEL",
-                "type": "MODEL",
-                "links": [
-                  237,
-                  409
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "TorchCompileModelWanVideoV2",
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
-            },
-            "widgets_values": [
-              "inductor",
-              false,
-              "default",
-              false,
-              true,
-              64,
-              true
-            ],
-            "color": "#223",
-            "bgcolor": "#335"
-          },
-          {
-            "id": 170,
-            "type": "TorchCompileModelWanVideoV2",
-            "pos": [
-              -7330,
-              5830
-            ],
-            "size": [
-              350,
-              202
-            ],
-            "flags": {},
-            "order": 37,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 673
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MODEL",
-                "name": "MODEL",
-                "type": "MODEL",
-                "links": [
-                  238,
-                  413
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "TorchCompileModelWanVideoV2",
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
-            },
-            "widgets_values": [
-              "inductor",
-              false,
-              "default",
-              false,
-              true,
-              64,
-              true
-            ],
-            "color": "#223",
-            "bgcolor": "#335"
           },
           {
             "id": 325,
@@ -8338,7 +8234,7 @@
                 "localized_name": "if_true",
                 "name": "if_true",
                 "type": "*",
-                "link": 413
+                "link": 851
               },
               {
                 "localized_name": "if_false",
@@ -8400,7 +8296,7 @@
                 "localized_name": "if_true",
                 "name": "if_true",
                 "type": "*",
-                "link": 409
+                "link": 850
               },
               {
                 "localized_name": "if_false",
@@ -8555,7 +8451,7 @@
                 "type": "*",
                 "links": [
                   675,
-                  676
+                  852
                 ]
               }
             ],
@@ -8616,8 +8512,8 @@
                 "name": "result",
                 "type": "*",
                 "links": [
-                  673,
-                  674
+                  674,
+                  853
                 ]
               }
             ],
@@ -10424,94 +10320,6 @@
             "bgcolor": "#535"
           },
           {
-            "id": 135,
-            "type": "PathchSageAttentionKJ",
-            "pos": [
-              -8560,
-              5660
-            ],
-            "size": [
-              260,
-              82
-            ],
-            "flags": {},
-            "order": 24,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 779
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MODEL",
-                "name": "MODEL",
-                "type": "MODEL",
-                "links": [
-                  658
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "PathchSageAttentionKJ",
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
-            },
-            "widgets_values": [
-              "sageattn_qk_int8_pv_fp8_cuda++",
-              false
-            ],
-            "color": "#223",
-            "bgcolor": "#335"
-          },
-          {
-            "id": 169,
-            "type": "PathchSageAttentionKJ",
-            "pos": [
-              -8560,
-              5860
-            ],
-            "size": [
-              260,
-              82
-            ],
-            "flags": {},
-            "order": 23,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 780
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "MODEL",
-                "name": "MODEL",
-                "type": "MODEL",
-                "links": [
-                  654
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "PathchSageAttentionKJ",
-              "cnr_id": "comfyui-kjnodes",
-              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
-            },
-            "widgets_values": [
-              "sageattn_qk_int8_pv_fp8_cuda++",
-              false
-            ],
-            "color": "#223",
-            "bgcolor": "#335"
-          },
-          {
             "id": 240,
             "type": "GetNode",
             "pos": [
@@ -11180,6 +10988,188 @@
             ],
             "color": "#322",
             "bgcolor": "#533"
+          },
+          {
+            "id": 135,
+            "type": "PathchSageAttentionKJ",
+            "pos": [
+              -8560,
+              5660
+            ],
+            "size": [
+              260,
+              82
+            ],
+            "flags": {},
+            "order": 24,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 779
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  658
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "PathchSageAttentionKJ",
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
+            },
+            "widgets_values": [
+              "auto",
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 169,
+            "type": "PathchSageAttentionKJ",
+            "pos": [
+              -8560,
+              5860
+            ],
+            "size": [
+              260,
+              82
+            ],
+            "flags": {},
+            "order": 23,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 780
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  654
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "PathchSageAttentionKJ",
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "36f6fdd7d4c393675ac622bd300ef667ee65d8b8"
+            },
+            "widgets_values": [
+              "auto",
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 442,
+            "type": "TorchCompileModelAdvanced",
+            "pos": [
+              -7290,
+              5600
+            ],
+            "size": [
+              293.3666687011719,
+              202
+            ],
+            "flags": {},
+            "order": 38,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 852
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  850
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "TorchCompileModelAdvanced"
+            },
+            "widgets_values": [
+              "inductor",
+              false,
+              "default",
+              "auto",
+              true,
+              64,
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+          },
+          {
+            "id": 443,
+            "type": "TorchCompileModelAdvanced",
+            "pos": [
+              -7290,
+              5850
+            ],
+            "size": [
+              293.3666687011719,
+              202
+            ],
+            "flags": {},
+            "order": 37,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 853
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "MODEL",
+                "name": "MODEL",
+                "type": "MODEL",
+                "links": [
+                  851
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "TorchCompileModelAdvanced"
+            },
+            "widgets_values": [
+              "inductor",
+              false,
+              "default",
+              "auto",
+              true,
+              64,
+              false
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
           }
         ],
         "groups": [
@@ -11202,8 +11192,8 @@
             "bounding": [
               -7340,
               5520,
-              610,
-              517.6
+              620,
+              570
             ],
             "color": "#3f789e",
             "font_size": 24,
@@ -11252,22 +11242,6 @@
             "target_id": 272,
             "target_slot": 2,
             "type": "BOOLEAN"
-          },
-          {
-            "id": 409,
-            "origin_id": 136,
-            "origin_slot": 0,
-            "target_id": 272,
-            "target_slot": 0,
-            "type": "*"
-          },
-          {
-            "id": 413,
-            "origin_id": 170,
-            "origin_slot": 0,
-            "target_id": 275,
-            "target_slot": 0,
-            "type": "*"
           },
           {
             "id": 415,
@@ -11510,14 +11484,6 @@
             "type": "*"
           },
           {
-            "id": 673,
-            "origin_id": 393,
-            "origin_slot": 0,
-            "target_id": 170,
-            "target_slot": 0,
-            "type": "MODEL"
-          },
-          {
             "id": 674,
             "origin_id": 393,
             "origin_slot": 0,
@@ -11532,14 +11498,6 @@
             "target_id": 272,
             "target_slot": 1,
             "type": "*"
-          },
-          {
-            "id": 676,
-            "origin_id": 392,
-            "origin_slot": 0,
-            "target_id": 136,
-            "target_slot": 0,
-            "type": "MODEL"
           },
           {
             "id": 677,
@@ -11986,6 +11944,38 @@
             "origin_id": 204,
             "origin_slot": 0,
             "target_id": 436,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 850,
+            "origin_id": 442,
+            "origin_slot": 0,
+            "target_id": 272,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 851,
+            "origin_id": 443,
+            "origin_slot": 0,
+            "target_id": 275,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 852,
+            "origin_id": 392,
+            "origin_slot": 0,
+            "target_id": 442,
+            "target_slot": 0,
+            "type": "MODEL"
+          },
+          {
+            "id": 853,
+            "origin_id": 393,
+            "origin_slot": 0,
+            "target_id": 443,
             "target_slot": 0,
             "type": "MODEL"
           }
@@ -17011,17 +17001,17 @@
   },
   "config": {},
   "extra": {
-    "frontendVersion": "1.37.11",
+    "frontendVersion": "1.38.13",
     "workflowRendererVersion": "LG",
     "VHS_latentpreview": true,
     "VHS_latentpreviewrate": 0,
     "VHS_MetadataImage": false,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.5451490849174626,
+      "scale": 0.5451490849174628,
       "offset": [
-        6799.423475861507,
-        -2773.542613704139
+        7092.4629485400765,
+        -2044.9631380047492
       ]
     }
   },

@@ -53,6 +53,16 @@ Enable  sageattention and torch compile if you know your system supports them.
 - Feel free to [open an issue on github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner/issues). This is the most direct way to engage me. If you want a head start, paste your complete console log from a failed run into your issue.
 
 ---
+## Examples
+All examples are a series of Wan 2.2 first-last frame generations joined together with this workflow.
+
+https://github.com/user-attachments/assets/2e7f7cdb-0ce3-4379-a96d-7cf25e28a1ed  
+
+https://github.com/user-attachments/assets/5057eafc-cc6c-4801-bf9c-53fcf3f0eb61
+
+https://github.com/user-attachments/assets/13d7cacd-1404-49a1-8652-6bfdf49efdf3
+
+---
 
 ## Changelog
 - **v2.4** - Minor tweaks. Adjust sage attention, torch compile defaults.

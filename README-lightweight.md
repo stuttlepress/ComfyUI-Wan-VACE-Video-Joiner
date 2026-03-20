@@ -9,6 +9,8 @@ This is a lightweight, (almost) no custom nodes ComfyUI workflow meant to quickl
 
 If you need to automatically join a large number of clips, mitigation of color/brightness artifacts, optimization options, try the full workflow instead.
 
+https://github.com/user-attachments/assets/db541128-8e18-4a55-bf8d-8f6e1b36cc23
+
 ## Dependencies
 My [ComfyUI-Wan-VACE-Prep](https://github.com/stuttlepress/Comfyui-Wan-VACE-Prep) custom node is required for this workflow. It replaces a large amount of awkward spaghetti workflow math, making this lightweight workflow version possible.
 In ComfyUI Manager, search for *Wan VACE Prep* or just load the workflow and then visit the **Missing** tab in Manager.

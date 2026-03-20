@@ -9,6 +9,8 @@ This is a lightweight, (almost) no custom nodes ComfyUI workflow meant to quickl
 
 If you need to automatically join a large number of clips, mitigation of color/brightness artifacts, optimization options, try the full workflow instead.
 
+https://github.com/user-attachments/assets/5980b148-3690-4eee-b66e-abfd10362cbd
+
 https://github.com/user-attachments/assets/db541128-8e18-4a55-bf8d-8f6e1b36cc23
 
 ## Dependencies

@@ -6,7 +6,7 @@
 
 Point this workflow at a directory of clips and it will automatically stitch them together. It's designed to work well with a few clips or dozens. At each transition, Wan VACE generates new frames guided by context on both sides, replacing the seam with motion that flows naturally between the clips. Noisy or artifacted frames at clip boundaries get replaced in the same pass. How many context frames and generated frames are used is configurable.
 
-The workflow runs with either Wan 2.1 VACE or Wan 2.2 Fun VACE. Input clips can come from anywhere — Wan, LTX-2, phone footage, stock video, whatever you have. 
+The workflow runs with either Wan 2.1 VACE or Wan 2.2 Fun VACE. Input clips can come from anywhere - Wan, LTX-2, phone footage, stock video, whatever you have. 
 
 If you want the result to loop cleanly, there's a toggle for that.
 

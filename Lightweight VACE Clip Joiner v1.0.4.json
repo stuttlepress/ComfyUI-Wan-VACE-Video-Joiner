@@ -1,0 +1,1682 @@
+{
+  "id": "f8bd3411-b5a6-4657-9574-2b7974c11fe2",
+  "revision": 0,
+  "last_node_id": 76,
+  "last_link_id": 117,
+  "nodes": [
+    {
+      "id": 28,
+      "type": "GetVideoComponents",
+      "pos": [
+        -3750,
+        2240
+      ],
+      "size": [
+        193.54999389648438,
+        66
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            88
+          ]
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": [
+            76
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetVideoComponents",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -4200,
+        2050
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            7
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 29,
+      "type": "GetVideoComponents",
+      "pos": [
+        -3750,
+        2360
+      ],
+      "size": [
+        193.54999389648438,
+        66
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            87
+          ]
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetVideoComponents",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 38,
+      "type": "MarkdownNote",
+      "pos": [
+        -4840,
+        1730
+      ],
+      "size": [
+        460,
+        420
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Model links",
+      "properties": {},
+      "widgets_values": [
+        "# VACE Model download links\n\nYou need one of the VACE variants below to run this workflow. Choose the model format and quantization that most closely matches what you run for your regular Wan workflow.\n\n**Wan 2.2 Fun VACE**\n  - [bf16 and fp8](https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/main/split_files/diffusion_models)\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.2-VACE-Fun-A14B-GGUF/tree/main)\n\n**Wan 2.1 VACE**\n\n  - [fp16](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/diffusion_models/wan2.1_vace_14B_fp16.safetensors)\n\n  - [GGUF](https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/tree/main)\n\n**Kijai’s extracted Fun Vace 2.2 modules, for loading along with standard T2V models. [Native use examples here.](https://huggingface.co/Kijai/WanVideo_comfy/discussions/81)**\n\n  - [bf16](https://huggingface.co/Kijai/WanVideo_comfy/tree/main/Fun/VACE)\n  - [GGUF](https://huggingface.co/Kijai/WanVideo_comfy_GGUF/tree/main/VACE)\n\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   └── 📂 diffusion_models/\n│   │      ├── wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors\n│   │      └── wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors\n```\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -4200,
+        1910
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 12,
+      "type": "UNETLoader",
+      "pos": [
+        -3720,
+        1640
+      ],
+      "size": [
+        390,
+        82
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "WAN 2.2\\Fun\\wan2.2_fun_vace_high_noise_14B_fp8_scaled.safetensors",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 11,
+      "type": "UNETLoader",
+      "pos": [
+        -3720,
+        1760
+      ],
+      "size": [
+        390,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "WAN 2.2\\Fun\\wan2.2_fun_vace_low_noise_14B_fp8_scaled.safetensors",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 6,
+      "type": "CLIPLoader",
+      "pos": [
+        -3720,
+        1880
+      ],
+      "size": [
+        390,
+        106
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6,
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPLoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan",
+        "default"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 8,
+      "type": "VAELoader",
+      "pos": [
+        -3720,
+        2030
+      ],
+      "size": [
+        390,
+        58
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            9,
+            28
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "wan_2.1_vae.safetensors"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 14,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -2860,
+        1650
+      ],
+      "size": [
+        380,
+        100
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "Wan 2.2\\T2V\\wan2.2_t2v_A14b_high_noise_lora_rank64_lightx2v_4step_1217.safetensors",
+        1
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 15,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -2860,
+        1790
+      ],
+      "size": [
+        380,
+        82
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            60
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "Wan 2.2\\T2V\\wan2.2_t2v_A14b_low_noise_lora_rank64_lightx2v_4step_1217.safetensors",
+        1
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 4,
+      "type": "WanVaceToVideo",
+      "pos": [
+        -3230,
+        2240
+      ],
+      "size": [
+        210,
+        254
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 5
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 9
+        },
+        {
+          "name": "control_video",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 89
+        },
+        {
+          "name": "control_masks",
+          "shape": 7,
+          "type": "MASK",
+          "link": 90
+        },
+        {
+          "name": "reference_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 91
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 93
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "widget": {
+            "name": "length"
+          },
+          "link": 94
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            61,
+            78
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            62,
+            79
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            63
+          ]
+        },
+        {
+          "name": "trim_latent",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WanVaceToVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        832,
+        480,
+        81,
+        1,
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 24,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        -2990,
+        2240
+      ],
+      "size": [
+        252.39999389648438,
+        478.72499656677246
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 59
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 61
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 62
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            58
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "enable",
+        947077384427151,
+        "randomize",
+        4,
+        1,
+        "euler",
+        "simple",
+        0,
+        2,
+        "enable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 25,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        -2710,
+        2240
+      ],
+      "size": [
+        252.39999389648438,
+        478.72499656677246
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 60
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 78
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 79
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 58
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            64
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "disable",
+        0,
+        "fixed",
+        4,
+        1,
+        "euler",
+        "simple",
+        2,
+        10000,
+        "disable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 68,
+      "type": "MarkdownNote",
+      "pos": [
+        -2380,
+        2240
+      ],
+      "size": [
+        310,
+        290
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👈 Samplers",
+      "properties": {},
+      "widgets_values": [
+        "## Sampler settings\n\nInference parameters aren't any different from normal Wan 2.2 generation. If you have a favorite sampler/scheduler combination for Wan generation, it will probably work fine here.\n\n> The default values assume the speedup lora is active.\n> - `steps: 4`\n> - `cfg: 1.0`\n\n> Without loras, use higher values.\n> - `steps: 20`\n> - `cfg: 3.5`\n\n\n"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 69,
+      "type": "MarkdownNote",
+      "pos": [
+        -5270,
+        2210
+      ],
+      "size": [
+        410,
+        590
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "🚨Troubleshooting🚨",
+      "properties": {},
+      "widgets_values": [
+        "# Troubleshooting\n\n- **The size of tensor a must match the size of tensor b at non-singleton dimension 1** - Check that both dimensions of your input videos are divisible by 16 and change this if they're not. Fun fact: 1080 is not divisible by 16!\n\n- **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.\n\n- **Brightness/color shift** - VACE can sometimes affect the brightness or saturation of the clips it generates. I don't know how to avoid this tendency, I think it's baked into the model, unfortunately.\n  - My other VACE clip joiner workflow ([Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2024299)) offers some options (crossfade, color matching) to reduce these artifacts.\n  - Disabling lightx2v speed loras can help, as can making sure you use the exact same lora(s) and strength in this workflow that you used when generating your clips. \n  - The most consistent mitigation I have found is to interpolate framerate up to 30 or 60 fps after using this workflow. The interpolation decreases how perceptible the color shift is. The shift is still there, but it's spread out over 60 frames instead over 16, so it doesn't look like a sudden change to our eyes any more. It's not perfect, but it gets you about 80% of the way there.\n\n- **Nodes 2.0** - The ComfyUI Nodes 2.0 renderer is an incomplete beta feature. It currently breaks a lot of workflows and custom nodes. I have not tested this workflow under Nodes 2.0, and I won't until Nodes 2.0 is a non-beta, fully implemented and unavoidable ComfyUI feature.\n\n- If you can't make the workflow work, update ComfyUI and try again. If you're not willing to update ComfyUI, I can't help you. We have to be working from the same baseline.\n\n- Feel free to [open an issue on github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner/issues). This is the most direct way to engage me. If you want a head start, paste your complete console log from a failed run into your issue."
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 37,
+      "type": "MarkdownNote",
+      "pos": [
+        -3300,
+        1720
+      ],
+      "size": [
+        370,
+        230
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👈 Models",
+      "properties": {},
+      "widgets_values": [
+        "## Select your preferred Wan VACE, CLIP and VAE models\n> - Select a VACE model of the same model type and quantization that you run in your regular Wan generation workflow. If you usually run FP8 for video generation, choose FP8 VACE models. If you usually use Q4 GGUF, use Q4 GGUF VACE models.\n> - *The key to success and no OOM is to configure this workflow as close to your regular Wan workflow as possible.*\n> - **If you need GGUF models, replace these nodes with your favorite GGUF loaders.**\n"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 67,
+      "type": "MarkdownNote",
+      "pos": [
+        -2860,
+        1910
+      ],
+      "size": [
+        380,
+        190
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👆Speedup Loras",
+      "properties": {},
+      "widgets_values": [
+        "## Select Lightning/Lightx2v Loras\n> - Loras are enabled by default because that seems to be how most people do Wan generation.\n> - For best results, use the same lora models and lora strength that your input clips were generated with.\n> - Reducing lora strength or disabling the loras completely can reduce color/brightness artifacts.\n> - If you disable loras, don't forget to adjust sampler settings appropriately. See the **Samplers** note below."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 30,
+      "type": "SaveVideo",
+      "pos": [
+        -2290,
+        3060
+      ],
+      "size": [
+        210,
+        216.125
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 69
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "VACE joined",
+        "auto",
+        "auto"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 31,
+      "type": "CreateVideo",
+      "pos": [
+        -2590,
+        3060
+      ],
+      "size": [
+        210,
+        78
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 103
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "fps",
+          "type": "FLOAT",
+          "widget": {
+            "name": "fps"
+          },
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            69
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        30
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 36,
+      "type": "MarkdownNote",
+      "pos": [
+        -4840,
+        2210
+      ],
+      "size": [
+        460,
+        600
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "README",
+      "properties": {},
+      "widgets_values": [
+        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2277993) \n\n*Note: There is a heavier version of this workflow with more options available [here](https://civitai.com/models/2024299) or at the Github link above. It's useful for joining a large number of clips automatically. It also offers some methods for mitigating color/brightness shift that VACE can sometimes introduce.*\n\n---\n\n# How to Use This Workflow  \nMost of this information can also be found in the cyan notes scattered thoughout the workflow.\n\n## 1. Install the [*ComfyUI-Wan-VACE-Prep*](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Prep) node pack.\n\nIt's a tiny package with no dependencies, so it is very unlikely to break your system, if you worry about such things.\n\nIf you don't already have the node, you can open the Manager and install it either from the *Missing Nodes* section, or search for **Wan VACE Prep**.\n\n## 2. Select models appropriate for your system\n- Select your VACE models in the *Load* group. \n- Select or disable speedup loras.\n\n## 3. Load your input videos  \nDrag and drop your input videos onto the **Load Video** nodes, or use the *choose file to upload* UI to select your videos. Both videos should be the same resolution and frame rate.\n\n## 4. Run the workflow\nThe joined video will be placed in your ComfyUI *output* directory, named something like `VACE joined_0001.mp4`\n"
+      ],
+      "color": "#146e47",
+      "bgcolor": "#005a33"
+    },
+    {
+      "id": 50,
+      "type": "MarkdownNote",
+      "pos": [
+        -4220,
+        1650
+      ],
+      "size": [
+        250,
+        170
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Prompts 👇",
+      "properties": {},
+      "widgets_values": [
+        "## Prompts are optional and usually unnecessary.  \nWe are generating a small number of frames, and VACE operates more from the motion cues in the context frames than from the prompt.  \nAnd of course the negative prompt is ineffective at CFG=1 without NAG."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 35,
+      "type": "LoadVideo",
+      "pos": [
+        -4290,
+        2240
+      ],
+      "size": [
+        430.83333587646484,
+        316.3437514305115
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            77
+          ]
+        }
+      ],
+      "title": "Load Video 1",
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "Video 1_00001.mp4",
+        "image"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 71,
+      "type": "MarkdownNote",
+      "pos": [
+        -4250,
+        2990
+      ],
+      "size": [
+        370,
+        140
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👆 Load Videos",
+      "properties": {},
+      "widgets_values": [
+        "Drag and drop your input videos onto the **Load Video** nodes above, or use the *choose file to upload* UI to select your videos. Both videos should be the same resolution and frame rate.\n\nThe node will reject videos that are in an incompatible format or are too large."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 27,
+      "type": "LoadVideo",
+      "pos": [
+        -4290,
+        2610
+      ],
+      "size": [
+        430.83333587646484,
+        316.3437514305115
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            67
+          ]
+        }
+      ],
+      "title": "Load Video 2",
+      "properties": {
+        "Node name for S&R": "LoadVideo",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [
+        "Video 2_00001.mp4",
+        "image"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 70,
+      "type": "MarkdownNote",
+      "pos": [
+        -2540,
+        3180
+      ],
+      "size": [
+        230,
+        88
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Output File 👉",
+      "properties": {},
+      "widgets_values": [
+        "The combined video will be saved as `ComfyUI\\output\\VACE joined_00001.mp4`"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 65,
+      "type": "MarkdownNote",
+      "pos": [
+        -3500,
+        2590
+      ],
+      "size": [
+        490,
+        230
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "👆 VACE Parameters",
+      "properties": {},
+      "widgets_values": [
+        "**The defaults, `context_frames=8` and `replace_frames=8` usually work well for most 16 fps videos.**\n> - **context_frames**: The number of reference frames from each side of the transition.\n> - **replace_frames**: The number of frames from each input clip that will be replaced by new frames generated by VACE. `replace_frames`=8 means 16 frames will be generated at the transition.\n> - **new_frames**: the number of brand new frames to generate at the transition in addition to `replace_frames`, extending the  joined clip.\n\nThis workflow will generate `(context_frames * 2) + (replace_frames * 2) + new_frames` frames at the transition. The first and last `context_frames` mirror existing frames from the input videos."
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 52,
+      "type": "MarkdownNote",
+      "pos": [
+        -5230,
+        1740
+      ],
+      "size": [
+        310,
+        280
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Changelog",
+      "properties": {},
+      "widgets_values": [
+        "[Github](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Video-Joiner) | [CivitAI](https://civitai.com/models/2277993) \n\n- **v1.0.4** Documentation updates, custom node changes. \n- **v1.0.3** Image Batch node fix.  \nI don't quite understand the sequence of events, but since I updated ComfyUI to 0.7.0, the *Batch Images* node is back to its old static self. The dynamic behavior it had when I released this workflow is gone. I don't *think* I accidentally used a custom version of that node previously, but that is actually the most likely explanation. Anyway, this is hopefully the end of `Prompt outputs failed validation: BatchImagesNode: - Required input is missing: image1` messages.\n- **v1.0.2** Core custom node change.\n  - The VACE node I began with wasn't quite flexible enough, so I moved to [my own custom node](https://github.com/stuttlepress/ComfyUI-Wan-VACE-Prep) instead.  \n\n- **v1.0.0** Initial release. "
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 58,
+      "type": "ImageBatch",
+      "pos": [
+        -2830,
+        3070
+      ],
+      "size": [
+        160,
+        50
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 116
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 117
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            103
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 16,
+      "type": "VAEDecode",
+      "pos": [
+        -3230,
+        3080
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 64
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            114
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 57,
+      "type": "ImageBatch",
+      "pos": [
+        -3050,
+        3070
+      ],
+      "size": [
+        160,
+        50
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 115
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 114
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            116
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageBatch",
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0"
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 51,
+      "type": "WanVACEPrep",
+      "pos": [
+        -3510,
+        2260
+      ],
+      "size": [
+        210,
+        286
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video_1",
+          "type": "IMAGE",
+          "link": 88
+        },
+        {
+          "name": "video_2",
+          "type": "IMAGE",
+          "link": 87
+        }
+      ],
+      "outputs": [
+        {
+          "name": "control_video",
+          "type": "IMAGE",
+          "links": [
+            89
+          ]
+        },
+        {
+          "name": "control_mask",
+          "type": "MASK",
+          "links": [
+            90
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            91
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            93
+          ]
+        },
+        {
+          "name": "length",
+          "type": "INT",
+          "links": [
+            94
+          ]
+        },
+        {
+          "name": "start_images",
+          "type": "IMAGE",
+          "links": [
+            115
+          ]
+        },
+        {
+          "name": "end_images",
+          "type": "IMAGE",
+          "links": [
+            117
+          ]
+        },
+        {
+          "name": "context_frames",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "replace_frames",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "new_frames",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WanVACEPrep",
+        "cnr_id": "comfyui-wan-vace-prep",
+        "ver": "1.0.5"
+      },
+      "widgets_values": [
+        4,
+        8,
+        24
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    }
+  ],
+  "links": [
+    [
+      5,
+      5,
+      0,
+      4,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      6,
+      6,
+      0,
+      5,
+      0,
+      "CLIP"
+    ],
+    [
+      7,
+      7,
+      0,
+      4,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      8,
+      6,
+      0,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      9,
+      8,
+      0,
+      4,
+      2,
+      "VAE"
+    ],
+    [
+      23,
+      12,
+      0,
+      14,
+      0,
+      "MODEL"
+    ],
+    [
+      25,
+      11,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      28,
+      8,
+      0,
+      16,
+      1,
+      "VAE"
+    ],
+    [
+      58,
+      24,
+      0,
+      25,
+      3,
+      "LATENT"
+    ],
+    [
+      59,
+      14,
+      0,
+      24,
+      0,
+      "MODEL"
+    ],
+    [
+      60,
+      15,
+      0,
+      25,
+      0,
+      "MODEL"
+    ],
+    [
+      61,
+      4,
+      0,
+      24,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      62,
+      4,
+      1,
+      24,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      63,
+      4,
+      2,
+      24,
+      3,
+      "LATENT"
+    ],
+    [
+      64,
+      25,
+      0,
+      16,
+      0,
+      "LATENT"
+    ],
+    [
+      67,
+      27,
+      0,
+      29,
+      0,
+      "VIDEO"
+    ],
+    [
+      69,
+      31,
+      0,
+      30,
+      0,
+      "VIDEO"
+    ],
+    [
+      76,
+      28,
+      2,
+      31,
+      2,
+      "FLOAT"
+    ],
+    [
+      77,
+      35,
+      0,
+      28,
+      0,
+      "VIDEO"
+    ],
+    [
+      78,
+      4,
+      0,
+      25,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      79,
+      4,
+      1,
+      25,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      87,
+      29,
+      0,
+      51,
+      1,
+      "IMAGE"
+    ],
+    [
+      88,
+      28,
+      0,
+      51,
+      0,
+      "IMAGE"
+    ],
+    [
+      89,
+      51,
+      0,
+      4,
+      3,
+      "IMAGE"
+    ],
+    [
+      90,
+      51,
+      1,
+      4,
+      4,
+      "MASK"
+    ],
+    [
+      91,
+      51,
+      2,
+      4,
+      6,
+      "INT"
+    ],
+    [
+      93,
+      51,
+      3,
+      4,
+      7,
+      "INT"
+    ],
+    [
+      94,
+      51,
+      4,
+      4,
+      8,
+      "INT"
+    ],
+    [
+      103,
+      58,
+      0,
+      31,
+      0,
+      "IMAGE"
+    ],
+    [
+      114,
+      16,
+      0,
+      57,
+      1,
+      "IMAGE"
+    ],
+    [
+      115,
+      51,
+      5,
+      57,
+      0,
+      "IMAGE"
+    ],
+    [
+      116,
+      57,
+      0,
+      58,
+      0,
+      "IMAGE"
+    ],
+    [
+      117,
+      51,
+      6,
+      58,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Output",
+      "bounding": [
+        -3350,
+        2950,
+        1380,
+        350
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Generate",
+      "bounding": [
+        -3780,
+        2150,
+        1380,
+        730
+      ],
+      "color": "#88A",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Load",
+      "bounding": [
+        -3780,
+        1560,
+        1380,
+        580
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Input",
+      "bounding": [
+        -4320,
+        1560,
+        530,
+        1680
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0461538148756409,
+      "offset": [
+        4112.268982217001,
+        -1842.460940207337
+      ]
+    },
+    "workflowRendererVersion": "LG",
+    "frontendVersion": "1.41.19",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": false,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

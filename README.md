@@ -50,9 +50,7 @@ Enable sageattention and torch compile if your system supports them.
 ## Troubleshooting
 - **The size of tensor a must match the size of tensor b at non-singleton dimension 1** - Check that both dimensions of your input videos are divisible by 16 and change this if they're not. Fun fact: 1080 is not divisible by 16!
 - **Brightness/color shift** - VACE can sometimes affect the brightness or saturation of the clips it generates. I don't know how to avoid this tendency, I think it's baked into the model, unfortunately. Disabling lightx2v speed loras can help, as can making sure you use the exact same lora(s) and strength in this workflow that you used when generating your clips. Some people have reported success using a color match node before output of the clips in this workflow. I think specific solutions vary by case, though. The most consistent mitigation I have found is to interpolate framerate up to 30 or 60 fps after using this workflow. The interpolation decreases how perceptible the color shift is. The shift is still there, but it's spread out over 60 frames instead over 16, so it doesn't look like a sudden change to our eyes any more.
-<<<<<<< HEAD
 - **Double images / ghosting at transitions with Wan 2.1 VACE** - In at least some cases, Wan 2.1 VACE outputs fewer frames than were in the control video input, even with correctly-sized 4n+1 inputs. This causes frame misalignment during cross-fade, producing double images at transitions. No fix yet. If you hit this, disabling cross-fade is the workaround for now.
-=======
 - **Failed to validate prompt for output** -
   Recent ComfyUI frontend updates have introduced significant issues with subgraph functionality that affect this workflow. ComfyUI_frontend_package 1.42.10 appears to fix subgraphs again.  
 
@@ -69,7 +67,6 @@ Enable sageattention and torch compile if your system supports them.
   The workflow may appear to run correctly, but only parts of it will actually produce output. It won't finish with a properly joined video.
 
   The solution is to downgrade your ComfyUI frontend to 1.39.19 or upgrade to 1.42.10, then reload a fresh copy of the workflow.
->>>>>>> ccf80692c225645471319effaf03fec53ce41dba
 - **Regarding Framerate** - The Wan models are trained at 16 fps, so if your input videos are at some higher rate, you may get sub-optimal results. At the very least, you'll need to increase the number of context and replace frames by whatever factor your framerate is greater than 16 fps in order to achieve the same effect with VACE. I suggest forcing your inputs down to 16 fps for processing with this workflow, then re-interpolating back up to your desired framerate.
 - **IndexError: list index out of range** - Your input video may be too small for the parameters you have specified. The minimum size for a video will be `(context_frames + replace_frames) * 2 + 1`. Confirm that all of your input videos have at least this minimum number of frames.
 - **Out of memory at the video join step** - The final video combine step is system RAM intensive. If you have a lot of input videos, you could run out of memory here. If this happens, use the VideoHelperSuite Meta Batch Manager to accomplish the combine in smaller chunks. A note in the workflow goes into more detail about exactly how to do this.
